@@ -16,7 +16,7 @@ if (Q.economic_growth) {
 
 = You
 
-<div style="text-align: center"><img src="out/html/img/portraits/MillerWilliam.jpg" width=150px></img>
+<div style="text-align: center"><img src="img/portraits/MillerWilliam.jpg" width=150px>
 <b>William Edward Miller</b>
 Vice President
 <b><span style="color: #FF0000;">Republican</span></b>─New York</div>
@@ -91,6 +91,8 @@ Our relations with the FBI are [+ bureau_relation : relationships +].
 They are [+ bureau_size +] strong. They are [+ bureau_effectiveness : effectiveness +].
 
 The FBI is led by [+ bureau_director +], who is [+ bureau_loyalty : loyalty +].
+
+[? if enemies = 0: We have not chosen our main enemies yet. Our enemies are the students' groups, civil rights groups, dissident Republicans, and the establishment. ?][? if enemies != 0 and enemies != "establishment": Our main enemies are the [+ enemies +]. ?][? if enemies = "establishment": Our main enemy is the political establishment. ?]
 
 = Military
 
