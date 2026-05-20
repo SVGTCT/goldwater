@@ -16,9 +16,17 @@ if (Q.economic_growth) {
 
 = You
 
-<div style="text-align: center">[+ main_photo +]
+[? if not goldwater_in_charge and not goldwater_event: <div style="text-align: center"><img src=\"img/portraits/MillerWilliam.jpg\" width=150px>
 
-<b>[+ main_man +]</b><br/>[+ main_role +]<br/><b>[+ main_party +]</b>─[+ main_state +]</div>
+<b>William Edward Miller</b><br/>Vice President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─New York</div> ?]
+
+[? if goldwater_event: <div style="text-align: center"><img src=\"img/portraits/GoldwaterBarry.jpg\" width=150px>
+
+<b>Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
+
+[? if goldwater_in_charge: <div style="text-align: center"><img src=\"img/portraits/GeneralGoldwater.jpg\" width=150px>
+
+<b>Maj Gen Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
 
 = Status
 
@@ -103,7 +111,7 @@ They are [+ bureau_size +] strong. They are [+ bureau_effectiveness : effectiven
 
 The FBI is led by [+ bureau_director +], who is [+ bureau_loyalty : loyalty +].
 
-<div style="text-align: center">[+ fbi_director_image +]</div>
+[? if bureau_director = "J. Edgar Hoover": <div style="text-align: center"><img src=\"img/portraits/HooverEdgarJ.jpg\" width=150px></div> ?]
 
 [? if enemies = 0: We have not chosen our main enemies yet. Our enemies are the students' groups, anti-war groups, civil rights groups, dissident Republicans, and the establishment. ?][? if enemies != 0 and enemies != "establishment": Our main enemies are the [+ enemies +]. ?][? if enemies = "establishment": Our main enemy is the political establishment. ?]
 
@@ -115,7 +123,7 @@ They are [+ mil_size +] strong. They are [+ mil_effectiveness : effectiveness +]
 
 The Chairman of the Joint Chiefs of Staff is [+ chief_of_staff +], who is [+ mil_loyalty : loyalty +].
 
-<div style="text-align: center">[+ cjcos_image +]</div>
+[? if chief_of_staff = "General Earle Wheeler": <div style="text-align: center"><img src=\"img/portraits/WheelerEarle.jpeg\" width=150px></div> ?]
 
 = Foreign Affairs
 
