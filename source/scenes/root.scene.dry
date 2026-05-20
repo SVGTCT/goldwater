@@ -619,7 +619,7 @@ Q.est_progressive = 45;
 //Coalitions
 
 Q.dixie_coalition = 0;
-Q.dixie_coalition_strength = 0;
+Q.dixie_coalition_success = 0;
 Q.est_coalition = 0;
 Q.est_coalition_success = 0;
 Q.rockefeller_coalition = 0;
