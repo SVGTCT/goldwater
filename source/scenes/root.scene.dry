@@ -595,7 +595,7 @@ Q.leverage = 6;
 //Government
 
 Q.president = "Barry Goldwater";
-Q.president_party = "<span style="color: #FF0000;">R</span>";
+Q.president_party = "<span style=\"color: #FF0000;\">R</span>";
 Q.president_state = "AZ";
 
 Q.gop_house = 182;
