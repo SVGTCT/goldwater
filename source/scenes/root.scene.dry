@@ -579,6 +579,79 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
+
+//New variables
+
+//Status
+
+goldwater_trust = 55;
+leverage = 6;
+
+//Government
+
+president = "Barry Goldwater";
+president_party = "<span style="color: #FF0000;">R</span>";
+president_state = "AZ";
+
+gop_house = 182;
+dem_house = 253;
+oth_house = 0;
+gop_sen = 35;
+dem_sen = 65;
+oth_sen = 0;
+
+// Relationships
+
+dixiecrat_relation = 35;
+rockefeller_relation = 45;
+establishment_relation = 25;
+bureau_relation = 55;
+
+// Events
+
+haiphong = 0;
+est_progressive = 45;
+dixie_coalition = 0;
+
+// Our Party
+
+dixies_strength = 0;
+dixies_dissent = 0;
+warhawk_strength = 20;
+warhawk_dissent = 10;
+conservative_strength = 30;
+conservative_dissent = 10;
+mainline_strength = 30;
+mainline_dissent = 25;
+libertarian_strength = 24;
+libertarian_dissent = 5;
+
+// Police
+
+bureau_relation = 30;
+bureau_loyalty = 0.50;
+bureau_director = "J. Edgar Hoover";
+bureau_effectiveness = 60;
+bureau_size = 29000;
+
+// Military
+
+mil_relation = 65; 
+mil_loyalty = 0.60 ;
+chief_of_staff = "General Earle Wheeler";
+mil_effectiveness = 30;
+mil_size = 2660000;
+
+// Foreign Affairs
+
+soviet_relation = 10;
+vietnam_effectiveness = 30;
+vietnam_talks = 0;
+vietnam_relation = 10;
+south_vietnam_relation = 60;
+
+public_approval = 49
+
 !}
 set-bg: img/map_2.jpg
 new-page: true
