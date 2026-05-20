@@ -323,6 +323,79 @@ Q.old_other_r = 9;
 Q.sapd_r = 0;
 Q.old_sapd_r = 0;
 
+
+//New variables
+
+//Status
+
+Q.goldwater_trust = 55;
+Q.leverage = 6;
+
+//Government
+
+Q.president = "Barry Goldwater";
+Q.president_party = "<span style="color: #FF0000;">R</span>";
+Q.president_state = "AZ";
+
+Q.gop_house = 182;
+Q.dem_house = 253;
+Q.oth_house = 0;
+Q.gop_sen = 35;
+Q.dem_sen = 65;
+Q.oth_sen = 0;
+
+// Relationships
+
+Q.dixiecrat_relation = 35;
+Q.rockefeller_relation = 45;
+Q.establishment_relation = 25;
+Q.bureau_relation = 55;
+
+// Events
+
+Q.haiphong = 0;
+Q.est_progressive = 45;
+Q.dixie_coalition = 0;
+
+// Our Party
+
+Q.dixies_strength = 0;
+Q.dixies_dissent = 0;
+Q.warhawk_strength = 20;
+Q.warhawk_dissent = 10;
+Q.conservative_strength = 30;
+Q.conservative_dissent = 10;
+Q.mainline_strength = 30;
+Q.mainline_dissent = 25;
+Q.libertarian_strength = 24;
+Q.libertarian_dissent = 5;
+
+// Police
+
+Q.bureau_relation = 30;
+Q.bureau_loyalty = 0.50;
+Q.bureau_director = "J. Edgar Hoover";
+Q.bureau_effectiveness = 60;
+Q.bureau_size = 29000;
+
+// Military
+
+Q.mil_relation = 65; 
+Q.mil_loyalty = 0.60 ;
+Q.chief_of_staff = "General Earle Wheeler";
+Q.mil_effectiveness = 30;
+Q.mil_size = 2660000;
+
+// Foreign Affairs
+
+Q.soviet_relation = 10;
+Q.vietnam_effectiveness = 30;
+Q.vietnam_talks = 0;
+Q.vietnam_relation = 10;
+Q.south_vietnam_relation = 60;
+
+Q.public_approval = 49
+
 // for changing the DDP's name to the DStP
 Q.ddp_name = "DDP";
 
@@ -579,79 +652,6 @@ Q.schumacher_advisor = 0; // Kurt Schumacher (post-1930)
 Q.hirschfeld_advisor = 0; // Magnus Hirschfeld
 Q.radbruch_advisor = 0; // Gustav Radbruch
 Q.stampfer_advisor = 0; // Friedrich Stampfer
-
-//New variables
-
-//Status
-
-Q.goldwater_trust = 55;
-Q.leverage = 6;
-
-//Government
-
-Q.president = "Barry Goldwater";
-Q.president_party = "<span style="color: #FF0000;">R</span>";
-Q.president_state = "AZ";
-
-Q.gop_house = 182;
-Q.dem_house = 253;
-Q.oth_house = 0;
-Q.gop_sen = 35;
-Q.dem_sen = 65;
-Q.oth_sen = 0;
-
-// Relationships
-
-Q.dixiecrat_relation = 35;
-Q.rockefeller_relation = 45;
-Q.establishment_relation = 25;
-Q.bureau_relation = 55;
-
-// Events
-
-Q.haiphong = 0;
-Q.est_progressive = 45;
-Q.dixie_coalition = 0;
-
-// Our Party
-
-Q.dixies_strength = 0;
-Q.dixies_dissent = 0;
-Q.warhawk_strength = 20;
-Q.warhawk_dissent = 10;
-Q.conservative_strength = 30;
-Q.conservative_dissent = 10;
-Q.mainline_strength = 30;
-Q.mainline_dissent = 25;
-Q.libertarian_strength = 24;
-Q.libertarian_dissent = 5;
-
-// Police
-
-Q.bureau_relation = 30;
-Q.bureau_loyalty = 0.50;
-Q.bureau_director = "J. Edgar Hoover";
-Q.bureau_effectiveness = 60;
-Q.bureau_size = 29000;
-
-// Military
-
-Q.mil_relation = 65; 
-Q.mil_loyalty = 0.60 ;
-Q.chief_of_staff = "General Earle Wheeler";
-Q.mil_effectiveness = 30;
-Q.mil_size = 2660000;
-
-// Foreign Affairs
-
-Q.soviet_relation = 10;
-Q.vietnam_effectiveness = 30;
-Q.vietnam_talks = 0;
-Q.vietnam_relation = 10;
-Q.south_vietnam_relation = 60;
-
-Q.public_approval = 49
-
 !}
 set-bg: img/map_2.jpg
 new-page: true
