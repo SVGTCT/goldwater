@@ -76,9 +76,9 @@ Liberal Republicans: [+ rockefeller_relation : relationships +]
 
 Liberal Establishment: [+ establishment_relation : relationships +]
 
-[? if not rockefeller_coalition_success: There is a mutual distrust between us and the political establishment. ?]
+[? if not est_coalition_success: There is a mutual distrust between us and the political establishment. ?]
 
-[? if rockefeller_coalition_success: While initially reluctant, we are now working well with the political establishment. ?]
+[? if est_coalition_success: While initially reluctant, we are now working well with the political establishment. ?]
 
 
 = Our Party
