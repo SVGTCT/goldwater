@@ -607,8 +607,8 @@ As Miller, you have a moral calling: stop a nuclear war. Beside that, you can gu
 
 Good luck.
 
-@answer_the_call: Answer the call
-@difficulty_menu: I want a different challenge.
+- @answer_the_call: Answer the call.
+- @difficulty_menu: I want a different challenge.
 
 @answer_the_call
 subtitle: Intended way of playing: normal difficulty with easy mechanics.
