@@ -610,7 +610,6 @@ Q.oth_sen = 0;
 Q.dixiecrat_relation = 35;
 Q.rockefeller_relation = 45;
 Q.establishment_relation = 25;
-Q.bureau_relation = 55;
 
 // Events
 
