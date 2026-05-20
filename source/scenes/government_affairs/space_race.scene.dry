@@ -1,0 +1,74 @@
+title: Space Race
+new-page: true
+is-card: true
+view-if: space_race_timer <= 0
+on-arrival: space_race_timer += 9; month_actions += 1
+card-image: img/X-15 flying crop.jpg
+go-to: space_menu
+tags: govt_affairs, cabinet
+
+= The Space Race
+
+The United States has been on the offensive in the Space Race since Yuri Gagarin became the first man to journey into outer space. [? if space_actions == 0 and space_reforms == 0: While it remains an issue of national pride in besting the Soviet Union, President Goldwater ran on the campaign pledge of handing the program over to the military. ?] [? if space_actions > 0 or space_reforms > 0: We have already begun implementing our program reforms. ?] How should we approach national space administration from here on out?
+
+@space_menu
+view-if: not last_advisor_action
+
+- @moon_landing
+- @moon_bomb
+- @increase_training
+- @increase_hardware
+- @reforms
+- @cut_funding
+- @return: Do not enact any policies for now.
+- @easy_discard
+- @cancel_advisor_action
+
+#Note PV effects !!!
+
+@moon_landing
+title: We can land a man on the moon!
+choose-if: space_reforms < 3 and space_actions > 2 and moon_landing = 0
+unavailable-subtitle: [? if space_actions < 3: We do not have the necessary technology yet. ?] [? if space_reforms > 2: The program's military leadership does not have the brainpower to do this. ?] [? if moon_landing > 0: We have already done this ?]
+on-arrival: dixiecrat_dissent -= 8; conservative_dissent -= 8; mainline_dissent -= 8; warhawk_dissent -= 8; libertarian_dissent -= 8; moon_landing += 1
+
+Thanks to the administration's focus on the Space Race and not shaking its leadership up, USAF pilot Michael Collins becomes the first man to step foot on the moon, flying aboard the Apollo XI with two others. This is a monumental achievement, which we will be more than glad to take credit for.
+
+@moon_bomb
+title: We can test a nuclear weapons delivery system on the moon!
+choose-if: space_reforms > 2 and space_actions > 2
+unavailable-subtitle: [? if space_actions < 3: We do not have the necessary technology yet. ?] [? if space_reforms < 3: The program's civilian leadership would never allow this. ?]
+on-arrival: dixiecrat_dissent += 5; conservative_dissent += 5; mainline_dissent += 5; warhawk_dissent -= 10; libertarian_dissent += 5; agency_loyalty += 0.05; bureau_loyalty += 0.05; military_loyalty += 0.06
+
+Since we have instituted military leaders in the space program's leadership and continued to build it up, they greenlight a basic test on the moon. This show of strength worries the entire world, including America and the Soviet Union, and has disastrous environmental effects on tidal patterns worldwide.
+
+@increase_training
+title: Increase funding for training programs and research.
+subtitle: -0.5 budget
+on-arrival: budget -= 0.5; experts_pt += 0.5; space_actions += 0.5; nasa_funding += 0.5
+
+We fund more programs to recruit more scientists and train more astronauts, earning us goodwill at NASA.
+
+@increase_hardware
+title: Increase funding for equipment and building spaceships.
+subtitle: -1 budget
+choose-if: space_actions < 2
+unavailable-subtitle: Our efforts would be better focused elsewhere.
+on-arrival: budget -= 1; space_actions += 1; nasa_funding += 1
+
+We fund the building of spaceships and purchase equipment for NASA.
+
+@reforms
+title: We can reform NASA's [? if space_reforms < 2: rank-and-file. ?] [? if space_reforms > 1: leadership. ?]
+on-arrival: space_reforms += 1; bureau_loyalty += 0.03; agency_loyalty += 0.03; military_loyalty += 0.04
+
+We shuffle NASA's [? if space_reforms < 2: rank-and-file, firing scientists and replacing them with officers. ?] [? if space_reforms > 1: leadership, putting generals in the real positions of power. ?]
+
+@cut_funding
+title: We can cut funding for NASA.
+subtitle: +1 budget
+choose-if: nasa_funding > 0
+unavailable-subtitle: There is nothing left to cut.
+on-arrival: space_reforms += 1; bureau_loyalty -= 0.02; agency_loyalty -= 0.02; military_loyalty -= 0.03; nasa_funding -= 1
+
+The space program is outrageously and unjustifiably expensive. Its funding must be reduced.
