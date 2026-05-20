@@ -26,10 +26,10 @@ subtitle: [+ charges - 1 +] resources gained.
 choose-if: charges > 1
 on-arrival: charges -= 1; resources += charges; inflation -= 0.2; unemployed -= 0.3
 
-[? if recession = 0: Upon being told this, financers are perplexed, but their greed leaves them happy to have their interests safeguarded with a lower cost. ?] [? if recession = 1: With the present economic situation, our backers appreciate this approach. They will have more money for their interests this way. ?}
+[? if recession = 0: Upon being told this, financers are perplexed, but their greed leaves them happy to have their interests safeguarded at a lower cost. ?] [? if recession = 1: With the present economic situation, our backers appreciate this approach. They will have more money for their interests this way. ?}
 
 @increase
 subtitle: [+ charges + 1 +] resources gained. [? if charges >= 4 : charges are already rather high; increasing them might turn away potential backers. ?]
 on-arrival: charges += 1; resources += charges; inflation += 0.2; unemployed += 0.3
 
-[? if recession = 0: We double our fundraising efforts. Some tycoons waver, but they dish out the dole from their wallets nonetheless for their White House crusader. ?] [? if recession = 1: Despite hevy grumbling about the "economic situation" they do not feel, our bankrollers still pay us. Such is the cost of protecting your interests. ?]
+[? if recession = 0: We double our fundraising efforts. Some tycoons waver, but they dish out the dole from their wallets nonetheless for their White House crusader. ?] [? if recession = 1: Despite heavy grumbling about the "economic situation" they do not feel, our bankrollers still pay us. Such is the cost of protecting your interests. ?]
