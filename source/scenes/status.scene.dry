@@ -28,7 +28,7 @@ Goldwater [+ goldwater_trust : goldwater_trust +] you.
 
 President: [+ president +] (<b>[+ president_party +]</b>─[+ president_state +])
 
-Vice President: William Edward Miller (<b><span style="color: #FF0000;"></b>R</span>─NY)
+Vice President: William Edward Miller (<b><span style="color: #FF0000;">R</span></b>─NY)
 
 House of Representatives composition:
 
@@ -38,8 +38,8 @@ House of Representatives composition:
 
 Senate composition:
 
-<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_sen +] seats ||
-<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_sen +] seats ||
+<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_sen +] seats 
+<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_sen +] seats
 <b><span style="color: #999;">Others</span></b>: [+ oth_sen +] seats
 
 Budget: [+ budget +]
