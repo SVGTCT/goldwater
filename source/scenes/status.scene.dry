@@ -68,9 +68,19 @@ Economic growth: [+ economic_growth_2 +]%
 
 [? if not dixie_coalition: We have more work to do before the South turns red. ?]
 
+[? if dixie_coalition: The south has turned <span style="color:#F00"><b>red</b></span>! ?]
+
 Liberal Republicans: [+ rockefeller_relation : relationships +]
 
+[? if not rockefeller_coalition_success: While they will not leave our party, the Republicans under Nelson Rockefeller's influence are keeping their distance from the administration. ?]
+
+[? if rockefeller_coalition_success: While initially reluctant, we are now working well with the Rockefeller Republicans. ?]
+
 Liberal Establishment: [+ establishment_relation : relationships +]
+
+[? if not rockefeller_coalition_success: There is a mutual distrust between us and the political establishment. ?]
+
+[? if rockefeller_coalition_success: While initially reluctant, we are now working well with the political establishment. ?]
 
 
 = Our Party
@@ -95,7 +105,7 @@ They are [+ bureau_size +] strong. They are [+ bureau_effectiveness : effectiven
 
 The FBI is led by [+ bureau_director +], who is [+ bureau_loyalty : loyalty +].
 
-[? if enemies = 0: We have not chosen our main enemies yet. Our enemies are the students' groups, civil rights groups, dissident Republicans, and the establishment. ?][? if enemies != 0 and enemies != "establishment": Our main enemies are the [+ enemies +]. ?][? if enemies = "establishment": Our main enemy is the political establishment. ?]
+[? if enemies = 0: We have not chosen our main enemies yet. Our enemies are the students' groups, anti-war groups, civil rights groups, dissident Republicans, and the establishment. ?][? if enemies != 0 and enemies != "establishment": Our main enemies are the [+ enemies +]. ?][? if enemies = "establishment": Our main enemy is the political establishment. ?]
 
 = Military
 
