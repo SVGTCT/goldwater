@@ -28,7 +28,7 @@ if (Q.ideology && Q.ideology != "libertarian") {
 }
 !}
 go-to: changed if changed = 1
-on-departure: ideology = "libertarian"; libertarian_strength += 10; dixie_coalition += 0.5; libertarian_dissent -= 5; est_relation -= 1; rockefeller_relation -= 3; dixie_relation += 1
+on-departure: ideology = "libertarian"; libertarian_strength += 10; dixie_coalition_strength += 0.5; libertarian_dissent -= 5; est_relation -= 1; rockefeller_relation -= 3; dixie_relation += 1
 
 Small government Republicans rejoice at this red meat, and Dixiecrats look favourably upon this at the expense of liberals.
 
@@ -73,10 +73,10 @@ if (Q.ideology && Q.ideology != "reformist") {
     Q.changed = 1;
 }
 !}
-choose-if: dixie_coalition = 1
+choose-if: dixie_coalition_strength = 1
 unavailable-subtitle: The Dixiecrats are not yet part of our tent. We still need to convince them.
 go-to: changed if changed = 1
-on-departure: ideology = "dixiecrat"; dixiecrat_strength += 10; dixie_coalition += 1; dixiecrat_dissent -= 5; warhawk_dissent -= 2; libertarian_dissent -= 3; conservative_dissent += 1; mainline_dissent += 4; est_relation -= 8; rockefeller_relation -= 10; dixie_relation += 8
+on-departure: ideology = "dixiecrat"; dixiecrat_strength += 10; dixie_coalition_strength += 1; dixiecrat_dissent -= 5; warhawk_dissent -= 2; libertarian_dissent -= 3; conservative_dissent += 1; mainline_dissent += 4; est_relation -= 8; rockefeller_relation -= 10; dixie_relation += 8
 
 Our new partners appreciate the olive branch we are extending to them. The establishment detests it.
 
