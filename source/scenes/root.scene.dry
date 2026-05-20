@@ -649,7 +649,7 @@ Q.mil_size = 2660000;
 // Foreign Affairs
 
 Q.soviet_relation = 10;
-Q.vietnam_effectiveness = 30;
+Q.vietnam_effectiveness = 44;
 Q.vietnam_talks = 0;
 Q.vietnam_relation = 10;
 Q.south_vietnam_relation = 60;
