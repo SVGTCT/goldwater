@@ -26,21 +26,21 @@ Goldwater [+ goldwater_trust : goldwater_trust +] you.
 
 = Government
 
-President: [+ president +] ([+ president_party +]─[+ president_state +])
+President: [+ president +] (<b>[+ president_party +]</b>─[+ president_state +])
 
-Vice President: William Edward Miller (<<span style="color: #FF0000;">R</span>─NY)
+Vice President: William Edward Miller (<b><span style="color: #FF0000;"></b>R</span>─NY)
 
 House of Representatives composition:
 
-<span style="color: #FF0000;">Republican Party</span>: [+ gop_house +] seats ||
-<span style="color: #0001ff;">Democratic Party</span>: [+ dem_house +] seats ||
-<span style="color: #DCDCDC;">Others</span>: [+ oth_house +] seats
+<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_house +] seats
+<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_house +] seats
+<b><span style="color: #999;">Others</span></b>: [+ oth_house +] seats
 
 Senate composition:
 
-<span style="color: #FF0000;">Republican Party</span>: [+ gop_sen +] seats ||
-<span style="color: #0001ff;">Democratic Party</span>: [+ dem_sen +] seats ||
-<span style="color: #DCDCDC;">Others</span>: [+ oth_sen +] seats
+<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_sen +] seats ||
+<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_sen +] seats ||
+<b><span style="color: #999;">Others</span></b>: [+ oth_sen +] seats
 
 Budget: [+ budget +]
 
@@ -59,7 +59,9 @@ Economic growth: [+ economic_growth_2 +]%
 = Alliances
 
 Southern Cause: [+ dixiecrat_relations : relationships +]
+
 Liberal Republicans: [+ rockefeller_relation : relationships +]
+
 Liberal Establishment: [+ establishment_relation : relationships +]
 
 
@@ -76,10 +78,6 @@ The Mainline is [+ mainline_strength : strength +]. They are [+ mainline_dissent
 [? if dixie_coalition: The Southern Republicans are [+ dixies_strength : strength +]. They are [+ dixies_dissent : dissent +]. ?]
 
 @paramilitaries
-
-= Soviet Union
-
-= Vietnam War
 
 = Police
 
@@ -101,7 +99,11 @@ The FBI is led by [+ chief_of_staff +], who is [+ mil_loyalty : loyalty +].
 
 Our relations with the Soviet Union are [+ soviet_relation : relationships +]. [? if soviet_relation < 15: This is expected. ?] [? if soviet_relation < 5: This risks nuclear war. ?]
 
-The Vietnam War is [+ vietnam_effectiveness : effectiveness +]. [? if vietnam_effectiveness < 10: President Goldwater is considering nuclear intervention. ?] [? if vietnam_talks: We have started talks with the North Vietnamese. ?] Our relations with the North Vietnamese are [+ vietnam_relation : relationships +]. Our relations with the South Vietnamese are [+ south_vietnam_relation : relationships +].
+The Vietnam War is [+ vietnam_effectiveness : effectiveness +]. [? if vietnam_effectiveness < 10: President Goldwater is considering nuclear intervention. ?] 
+
+[? if vietnam_talks: We have started talks with the North Vietnamese. ?] Our relations with the North Vietnamese are [+ vietnam_relation : relationships +]. 
+
+Our relations with the South Vietnamese are [+ south_vietnam_relation : relationships +].
 
 @polls
 
