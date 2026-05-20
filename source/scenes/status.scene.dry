@@ -18,7 +18,7 @@ if (Q.economic_growth) {
 
 <div style="text-align: center">[+ main_photo +]
 
-<b>[+ main_man +]/b><br/>[+ main_role +]<br/><b>[+ main_party +]</b>─[+ main_state +]</div>
+<b>[+ main_man +]</b><br/>[+ main_role +]<br/><b>[+ main_party +]</b>─[+ main_state +]</div>
 
 = Status
 
