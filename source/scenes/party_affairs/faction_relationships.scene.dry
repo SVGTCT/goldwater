@@ -93,8 +93,8 @@ We have seemingly satisfied the liberals in our party, with a push they may now 
 
 @dixiecrats
 subtitle: -1 resources
-choose-if: resources >= 1 and dixie_coalition = 0
-unavailable-subtitle: [? if resources == 0: Not enough resources. ?] [? if dixie_coalition = 1: The Dixiecrats have joined our coalition already. ?]
+choose-if: resources >= 1 and dixie_coalition_success = 0
+unavailable-subtitle: [? if resources == 0: Not enough resources. ?] [? if dixie_coalition_success = 1: The Dixiecrats have joined our coalition already. ?]
 on-arrival: resources -= 1; dixie_coalition += 0.5
 go-to: dixie_1
 
