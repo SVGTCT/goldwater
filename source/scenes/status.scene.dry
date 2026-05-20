@@ -63,7 +63,9 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Alliances
 
-Southern Cause: [+ dixiecrat_relation : relationships +]
+[? if not dixie_coalition: Southern Cause: [+ dixiecrat_relation : relationships +] ?]
+
+[? if not dixie_coalition: We have more work to do before the South turns red. ?]
 
 Liberal Republicans: [+ rockefeller_relation : relationships +]
 
