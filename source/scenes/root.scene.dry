@@ -582,6 +582,9 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 !}
 set-bg: img/map_2.jpg
 new-page: true
+go-to: disclaimer
+
+@disclaimer
 
 <i><b>Note:</i></b>
 
@@ -593,7 +596,7 @@ For more information on the scenario, consult the "Mod Info" section at the star
 
 Disclaimer: you will be able to subvert democracy and encourage segregation in this game, as well as other unruly things. Their inclusion does not mean I support them. <b>I do not</b>.
 
- - @start_overview: I understand.
+- @start_overview: I understand.
 
 @start_overview
 on-arrival: difficulty = -1;
