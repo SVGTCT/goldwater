@@ -91,7 +91,7 @@ The Conservatives are [+ conservative_strength : strength +]. They are [+ conser
 
 The Mainline is [+ mainline_strength : strength +]. They are [+ mainline_dissent : dissent +].
 
-[? if dixie_coalition: The Southern Republicans are [+ dixies_strength : strength +]. They are [+ dixies_dissent : dissent +]. ?]
+[? if dixie_coalition_success: The Southern Republicans are [+ dixies_strength : strength +]. They are [+ dixies_dissent : dissent +]. ?]
 
 @paramilitaries
 
