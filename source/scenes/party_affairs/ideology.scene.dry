@@ -1,0 +1,88 @@
+title: Questions of Ideology
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: ideology_timer = 0 and timer >= 6
+on-arrival: month_actions += 1; old_ideology = ideology; ideology_timer = 14
+card-image: img/Conservative Study Group.jpg
+max-visits: 3
+#subtitle: Setting the administration's ideological direction.
+
+= Questions of Ideology
+
+Our government has been swayed by many different realms of political thought. At the top of the machine, we must set a course to sail in.
+
+[? if ideology != 0 : We have previously chosen a [+ ideology +] ideology. Changing it will likely have drawbacks. ?]
+
+- @libertarian: Defending economic and individual liberties and the rights of states should be our main focus.
+- @conservative: Conservative positions, particularly fiscal ones, are the best way to unite our tent.
+- @warhawk: To defend American interests against communism is the most honourable pursuit.
+- @mainline: We should focus on achieving economic prosperity for the average American by working with Congress.
+- @dixies: Our aims can turn to "states' rights" as a veneer against civil rights.
+- @easy_discard
+
+@libertarian
+on-arrival: {!
+if (Q.ideology && Q.ideology != "libertarian") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "libertarian"; libertarian_strength += 10; dixie_coalition += 0.5; libertarian_dissent -= 5; est_relation -= 1; rockefeller_relation -= 3; dixie_relation += 1
+
+Small government Republicans rejoice at this red meat, and Dixiecrats look favourably upon this at the expense of liberals.
+
+@conservative
+on-arrival: {!
+if (Q.ideology && Q.ideology != "centrist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "conservative"; conservative_strength += 10; conservative_dissent -= 10; libertarian_dissent -= 2; rockefeller_relation -= 5; est_relation -= 2
+
+The conservatives, representing increasingly more of the Republican party, are broadly popular within our base.
+
+@warhawk
+on-arrival: {!
+if (Q.ideology && Q.ideology != "labor") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "warhawk"; warhawk_strength += 10; nuclear_strike_support += 1; warhawk_dissent -= 5
+
+None in our coalition oppose efforts against communism, though the warhawks are especially enthusiastic and wish to see them greatly expanded.
+
+@mainline
+on-arrival: {!
+if (Q.ideology && Q.ideology != "reformist") {
+    Q.changed = 1;
+}
+!}
+go-to: changed if changed = 1
+on-departure: ideology = "mainline"; mainline_strength += 10; econ_policy_pt += 1; experts_pt += 0.5; mainline_dissent -= 5; warhawk_dissent += 2; libertarian_dissent += 2; conservative_dissent += 2; dixiecrat_dissent += 2
+
+Approaching government with a pragmatic approach is popular, but upsets ideological standard-bearers across the party.
+
+However, an economic-focused stance draws conservative experts like Buchanan and Friedman to us, whose knowledge is indispensable.
+
+@dixies
+on-arrival: {!
+if (Q.ideology && Q.ideology != "reformist") {
+    Q.changed = 1;
+}
+!}
+choose-if: dixie_coalition = 1
+unavailable-subtitle: The Dixiecrats are not yet part of our tent. We still need to convince them.
+go-to: changed if changed = 1
+on-departure: ideology = "dixiecrat"; dixiecrat_strength += 10; dixie_coalition += 1; dixiecrat_dissent -= 5; warhawk_dissent -= 2; libertarian_dissent -= 3; conservative_dissent += 1; mainline_dissent += 4; est_relation -= 8; rockefeller_relation -= 10; dixie_relation += 8
+
+Our new partners appreciate the olive branch we are extending to them. The establishment detests it.
+
+However, traditional conservatives feel out of place under this new direction. Their every desire is no longer being pandered to by the President.
+
+@changed
+on-arrival: libertarian_dissent += 5; conservative_dissent += 5; warhawk_dissent += 5; mainline_dissent += 5; dixiecrat_dissent += 5
+
+We have changed course, shaking up our ranks. Many feel uncertain of their positions.

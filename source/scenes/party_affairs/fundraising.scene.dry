@@ -1,0 +1,35 @@
+title: Fundraising
+new-page: true
+view-if: fundraising_timer <= 0 
+on-arrival: fundraising_timer = 6; month_actions += 1
+frequency: 300
+is-card: true
+card-image: img/Draft_Goldwater_1964.jpg
+tags: party_affairs
+
+= Fundraising
+
+For better or for worse, we cannot operate without money.
+
+- @maintain: Maintain our current fundraising efforts.
+- @reduce: Reduce efforts.
+- @increase: Increase efforts.
+
+@maintain
+subtitle: [+ charges +] resources gained.
+on-arrival: resources += charges;
+
+We maintain our current fundraising efforts.
+
+@reduce
+subtitle: [+ charges - 1 +] resources gained.
+choose-if: charges > 1
+on-arrival: charges -= 1; resources += charges; inflation -= 0.2; unemployed -= 0.3
+
+[? if recession = 0: Upon being told this, financers are perplexed, but their greed leaves them happy to have their interests safeguarded with a lower cost. ?] [? if recession = 1: With the present economic situation, our backers appreciate this approach. They will have more money for their interests this way. ?}
+
+@increase
+subtitle: [+ charges + 1 +] resources gained. [? if charges >= 4 : charges are already rather high; increasing them might turn away potential backers. ?]
+on-arrival: charges += 1; resources += charges; inflation += 0.2; unemployed += 0.3
+
+[? if recession = 0: We double our fundraising efforts. Some tycoons waver, but they dish out the dole from their wallets nonetheless for their White House crusader. ?] [? if recession = 1: Despite hevy grumbling about the "economic situation" they do not feel, our bankrollers still pay us. Such is the cost of protecting your interests. ?]

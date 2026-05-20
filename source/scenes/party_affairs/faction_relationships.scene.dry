@@ -1,0 +1,112 @@
+title: Factional Relationships
+new-page: true
+view-if: year <= 1968 and faction_party_relationships_timer <= 0
+tags: party_affairs
+is-card: true
+on-arrival: month_actions += 1; faction_party_relationships_timer = 6;
+card-image: img/Carl Albert, Barry Goldwater, Robert L. F. Sikes, and others standing on the steps of the Capitol.jpg
+max-visits: 12
+#subtitle: Building working relations with the other political factions in the United States.
+
+= Factional Relationships
+
+No matter how much a President can present himself as a strongman or ideological stalwart, the reality is that bills do not become laws without support from the hill. We must convince congressional factions of our goodwill to press on with our domestic agenda.
+
+- @dixiecrats: Sweet-talk our way through with the good ol' Southern boys.
+- @rockefellers: Patch up our bonds with the liberal Republicans.
+- @establishment: Work towards making headway with the liberal establishment.
+- @us_alone: The administration can stand alone for now.
+- @easy_discard
+
+# Establishment
+
+@establishment
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1; est_inter_party_seen += 1
+go-to: est_haiphong if haiphong = 1; est_1 if haiphong = 0 and est_coalition_success = 0 and (est_relation < 40 or est_assurances = 1); establishment_assurances if est_relation >= 40 and est_assurances = 0 and nuclear_warfare = 0; est_2 if est_coalition_success = 1 and est_assurances = 1
+
+@est_1
+on-arrival: est_relation += 6*(1 - dissent); establishment_coalition += 1 if est_inter_party_seen <= 1; conservative_dissent += 2; est_progressive -= 2
+
+The establishment struggles to believe our goodwill, and the base regards this as a betrayal. However, late-night drinking with more hawkish congressmen and senators produces some important connections.
+
+@establishment_assurances
+
+Despite our overtures, the establishment is particularly wary of our silence regarding nuclear warfare. They have been persuaded to accept some legislative compromises, but this will require us to put these plans to bed. In this eventuality, the Pentagon would move to render a strike impossible.
+
+Many in the Cabinet see this as patently unacceptable and blatant treachery of our conservative values.
+
+- @assurances_made: Yes, we must accept this. Tell Laird we're playing with a new hand.
+- @no_assurances: No, we should not deny the Pentagon a useful weapon. What would Laird say?
+
+@assurances_made
+on-arrival: conservative_dissent += 12; conservative_strength -= 2; warhawk_dissent += 10; warhawk_strength -= 1; dixiecrat_dissent += 5; dixie_relation -= 5; libertarian_dissent -= 6; libertarian_strength += 5; mainline_disent -= 2; assurances_made = 1; liberal_relation += 6; dixie_relation -= 6; est_relation += 8*(1-dissent); est_progressive -= 10
+
+If we're going to deal with the establishment, we must present ourselves as sane, sensible people to deal with.
+
+This helps our relations with liberal Republicans but angers the base and Dixiecrats.
+
+@no_assurances
+on-arrival: est_relation -= 3; liberal_relation -= 1; warhawk_strength += 1; est_progressive += 10
+
+Laird and the Department of Defense appreciate this. We must keep all options on the table.
+
+Still, most think the government would never even explore this possibility.
+
+@est_2
+on-arrival: est_relation += 8*(1 - dissent); establishment_coalition += 1 if est_inter_party_seen <= 1; conservative_dissent += 2; z_relation -= 3; dvp_relation -= 3; est_progressive -= 5
+
+After the success in working with the establishment in Congress, they welcome further cooperation.
+
+@est_haiphong
+on-arrival: est_relation += 3*(1 - dissent); conservative_dissent += 1
+
+After the events of Haiphong, dealing with the establishment is difficult, if not impossible. Nevertheless, we must try, our agenda relies on it.
+
+#Liberal Republicans
+
+@rockefellers
+subtitle: -1 resources
+choose-if: resources >= 1
+unavailable-subtitle: Not enough resources.
+on-arrival: resources -= 1
+go-to: rockefellers_coalition if rockefeller_coalition_success = 1; rockefellers_1 if rockefeller_coalition_success = 0 and rockefeller_relation < 70; rockefellers_2 if rockefeller_coalition_success = 0 and rockefeller_relation > 70
+
+@rockefellers_coalition
+on-arrival: rockefeller_relation += (2 + (8*(1 - dissent)))
+
+Our success in dealing with the Rockefeller Republicans leaves them thirsty for cooperation that will benefit them.
+
+@rockefellers_1
+on-arrival: rockefeller_relation += 5*(1 - dissent); conservative_dissent -= 2; dixie_dissent -= 2
+
+Though it is important that we patch our relations with the Eastern Establishment, many fear it is a waste of time.
+
+@rockefellers_2
+on-arrival: rockefeller_relation += ((6*(1 - dissent)) + 0.5)
+
+We have seemingly satisfied the liberals in our party, with a push they may now help us push some bills through Congress.
+
+# Dixiecrats
+
+@dixiecrats
+subtitle: -1 resources
+choose-if: resources >= 1 and dixie_coalition = 0
+unavailable-subtitle: [? if resources == 0: Not enough resources. ?] [? if dixie_coalition = 1: The Dixiecrats have joined our coalition already. ?]
+on-arrival: resources -= 1; dixie_coalition += 0.5
+go-to: dixie_1
+
+@dixie_1
+on-arrival: dixie_relation += 6.5*(1 - dissent)
+
+Smoke-filled rooms and flowing liquor form the backdrop to fulfilling talks with these good ol' boys. In Goldwater they trust, just waiting to tear apart the northern, liberal leadership.
+
+Though they insist on their independence, we would be lost in Congress without the Dixiecrats' help.
+
+@us_alone
+
+Whether it is because we *cannot* or *will not*, we do not make dealings with other factions at this moment.
+
+- @return: Continue...

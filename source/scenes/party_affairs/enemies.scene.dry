@@ -1,0 +1,50 @@
+title: Choosing Our Enemies
+new-page: true
+view-if: year < 1968 and enemies_timer <= 0
+on-arrival: month_actions += 1; enemies_timer = 18
+max-visits: 3
+is-card: true
+card-image: img/KKK_members_for_Goldwater_in_1964.jpeg
+tags: party_affairs
+
+= Choosing our enemies
+
+When talking to the media and dealing with intelligence services, who should we indicate as working against?
+
+[? if enemies != 0 : Previously, we had considered the [+ enemies +] as our prior enemies. Should we change direction? ?]
+
+- @students: Clearly, the unquietable liberal students who are nothing but a nuisance with their "causes".
+- @c_rights: The disruptive civil rights organisers who have no understanding of the political process.
+- @vietnam: The idiotic, flat-out wrong groups protesting the war in Vietnam, especially the draft-dodgers.
+- @establishment: The misguided establishment which only seeks to block any governance from taking place.
+- @dissidents: The dissident, cloaked liberals in our party who oppose its new conservative direction.
+- @easy_discard
+
+#Note Popular Support !!!
+
+@students
+on-arrival: enemies = "students"; mainline_strength += 5; conservative_strength += 5; libertarian_dissent += 5; est_relation -= 5; est_progressive += 8; bureau_relation += 1
+
+Attacking the students is popular among all but the libertarian wing of our party, who see it as infringing personal liberty. This might also hamper our relations with the establishment if it decides to take a progressive-minded direction.
+
+@c_rights
+on-arrival: enemies = "civil rights groups"; dixiecrat_strength += 8; est_relation -= 5; rockefeller_relation -= 8; dixie_relation += 6; bureau_relation += 1
+
+The administration rose to the White House on the back of backlash to the civil rights movement, so this is an expected choice. However, this rhetoric may shake up our standing in Congress if we are not careful.
+
+@vietnam
+on-arrival: enemies = "anti-war groups"; warhawk_strength += 5; bureau_relation += 2
+
+[? if year >= 1967 or haiphong = 1: The public is tired of the war in Vietnam. Attacking these groups only draws attention to them. ?][? if year < 1967  and haiphong >= 0: Attacking unpopular groups who stand against the war in Vietnam is popular amongst everyone in our voting coalition and is welcomed by the public itself. ?]
+
+@establishment
+on-arrival: enemies = "establishment"; dixiecrat_strength += 5; conservative_strength += 5; dixiecrat_dissent -= 5; est_relation -= 15; dixie_relation += 5
+
+Attacking the establishment is not unpopular but it leaves many scratching their heads over its efficacy, or lack of it. Dixiecrats commend the move greatly, though.
+
+# Dissidents should greatly reduce popular support.
+
+@dissidents
+on-arrival: enemies = "dissident Republicans"; conservative_strength += 6; conservative_dissent -= 4; est_relation -= 5; rockefeller_relation -= 15
+
+This type of bark is supported by our combative base, especially hardline conservatives. But it is greatly unpopular on Capitol Hill and makes the G.O.P. look like it is burning itself to the ground to the public.
