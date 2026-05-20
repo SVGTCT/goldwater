@@ -668,6 +668,8 @@ Q.vietnam_relation = 10;
 Q.south_vietnam_relation = 60;
 
 Q.public_approval = 49;
+
+Q.monthly_news = "Barry Goldwater is sworn in as President of the United States.<br/><br/>The state funeral of Sir Winston Churchill takes place in London with the largest attendance of dignitaries ever seen."
 !}
 
 <i><b>Note:</i></b>
