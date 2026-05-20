@@ -11,7 +11,7 @@ go-to: start_menu_2
 @start_menu_2
 
 - @start: Start game
-- @election_simulation: Election simulation
+- @election_simulation: Mod Info
 - @credits: Credits
 - @game_over.achievements
 
@@ -593,9 +593,10 @@ For more information on the scenario, consult the "Mod Info" section at the star
 
 Disclaimer: you will be able to subvert democracy and encourage segregation in this game, as well as other unruly things. Their inclusion does not mean I support them. <b>I do not</b>.
 
- - @start_overview: I understand
+ - @start_overview: I understand.
 
 @start_overview
+on-arrival: difficulty = -1;
 
 In 1945, the United States dropped the nuclear bomb on the Japanese cities of Hiroshima and Nagasaki. This inhumane calamity led to the deaths of 150,000 to 250,000 people. Arguably, it ended World War II. But was it worth it?
 
@@ -612,7 +613,6 @@ Good luck.
 
 @answer_the_call
 subtitle: Intended way of playing: normal difficulty with easy mechanics.
-on-arrival: difficulty = -1;
 go-to: 1928_main
 
 @difficulty_menu
