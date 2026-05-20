@@ -2,7 +2,7 @@ title: Questions of Ideology
 new-page: true
 is-card: true
 tags: party_affairs
-view-if: ideology_timer = 0 and timer >= 6
+view-if: ideology_timer = 0
 on-arrival: month_actions += 1; old_ideology = ideology; ideology_timer = 14
 card-image: img/Conservative Study Group.jpg
 max-visits: 3
