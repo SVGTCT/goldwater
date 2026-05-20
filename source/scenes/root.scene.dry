@@ -655,7 +655,7 @@ Q.vietnam_talks = 0;
 Q.vietnam_relation = 10;
 Q.south_vietnam_relation = 60;
 
-Q.public_approval = 49
+Q.public_approval = 49;
 !}
 
 <i><b>Note:</i></b>
