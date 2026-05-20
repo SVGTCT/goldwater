@@ -1,8 +1,8 @@
 
 # party faction dissent
 
-(..4.999) placated
-(4.999..14.999) happy
-(14.999..30.999) satisfied
-(30.999..49.999) unhappy
-(49.999..) in open revolt
+(..4.999) <span style="color:#274e13">placated</span>
+(4.999..14.999) <span style="color:#38761d">happy</span>
+(14.999..30.999) <span style="color:#6aa84f">satisfied</span>
+(30.999..49.999) <span style="color:#cc0000">unhappy</span>
+(49.999..) <span style="color:#990000">in open revolt</span>
