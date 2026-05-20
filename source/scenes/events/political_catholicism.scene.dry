@@ -1,0 +1,47 @@
+title: A Higher Calling
+subtitle: Reflecting on history.
+view-if: year = 1965 and month = 2
+max-visits: 1
+tags: event
+new-page: true
+#face-image: WIP
+
+#This section is WIP. What needs to be done: state multiplier effects for each choice.
+
+= A Higher Calling
+
+You, William Miller, made history when Goldwater chose you as his running mate, becoming the first Republican nominated for vice president. Upon the ticket's unexpected election, you also made history by becoming the first Catholic vice president. Congratulations.
+
+But it's not all sunshine and rainbows. Anti-Catholicism is a blood that has long run deep in America's veins, unfortunately. It goes without saying that Kennedy was the first Catholic president, and though initially it seemed the nation had put that bigotry behind it, his failures did little to endear Catholics. 
+  
+However, you could work on changing that, now that you're the vice president. 
+
+Well, it's not exactly a choice. Goldwater chose you as his opposite, a northeastern man to balance out the southwestern. Now, either you put that to good use and extend the Republican coalition, or you start doing something that will make the South more receptive to your Catholicism.
+
+- @northern_campaign: Use these credentials to campaign in New York and New England.
+- @southern_campaign: Embark on a speaking tour in the South to humanise Catholicism.
+- @overtures: Use this opportunity to secure nationwide recognition of American Catholics.
+- @all_americans: The vice presidency will not pander to special interests.
+
+@northern_campaign
+on-arrival: dixie_coalition -= 2; dixie_relation -= 10; rockefeller_coalition += 1; rockefeller_relation += 2; est_relation += 5; rockefeller_coalition += 0.5; est_coalition += 0.5; 
+
+Working to counteract the wide success Kennedy had with Catholics in the northeast, you return to your home state and carry out vital work for the presidency. The liberals make note of this, as campaigning among what they consider to be their new turf makes many feel represented, even by a radical administration. Perhaps the Republicans can secure both the south <i>and</i> north.
+
+@southern_campaign
+on-arrival: dixie_coalition -= 1; dixie_relation -= 5; rockefeller_coalition -= 1; rockefeller_relation -= 5; est_relation -= 5; rockefeller_coalition -= 1; est_coalition -= 1; goldwater_trust += 10; miller_leverage -= 3;
+
+The administration continues its pandering to the South. After all, it was instrumental in electing the president. By retreating into your natural academic element, you make some of the gentlemen down here see that Catholics aren't that scary. Hopefully, this trickles down to the average Joe.
+
+@overtures
+on-arrival: dixie_coalition -= 3; dixie_relation -= 15; catholic_politics = 1; rockefeller_relation += 2; est_relation += 2; miller_leverage -= 2;
+
+While nobody is arguing for bishops to serve as spiritual leaders, it would be nice to see them recognised by the federal government. The national conferences are glad to see a friendly face in the administration, and your subordinates start important work.
+
+<i>You have unlocked Political Catholicism.</i>
+  
+@all_americans
+subtitle: Kennedy, though wrong on many things, was right on this one.   
+on-arrival: dixie_coalition -= 0.5; dixie_relation -= 5; rockefeller_coalition -= 0.5; rockefeller_relation += 5; est_relation += 5; rockefeller_coalition += 0.5; est_coalition += 0.5; goldwater_trust -= 5; miller_leverage += 3;
+
+A nice, middle-of-the-road option. It doesn't make you any friends, but nor does it create any enemies. It's a noble path to take. People in the administration note you taking the high road; the president is not so pleased ─ he feels you're leaving something on the table.
