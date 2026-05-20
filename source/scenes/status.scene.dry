@@ -103,7 +103,7 @@ They are [+ bureau_size +] strong. They are [+ bureau_effectiveness : effectiven
 
 The FBI is led by [+ bureau_director +], who is [+ bureau_loyalty : loyalty +].
 
-[+ fbi_director_image +]
+<div style="text-align: center">[+ fbi_director_image +]</div>
 
 [? if enemies = 0: We have not chosen our main enemies yet. Our enemies are the students' groups, anti-war groups, civil rights groups, dissident Republicans, and the establishment. ?][? if enemies != 0 and enemies != "establishment": Our main enemies are the [+ enemies +]. ?][? if enemies = "establishment": Our main enemy is the political establishment. ?]
 
@@ -115,7 +115,7 @@ They are [+ mil_size +] strong. They are [+ mil_effectiveness : effectiveness +]
 
 The Chairman of the Joint Chiefs of Staff is [+ chief_of_staff +], who is [+ mil_loyalty : loyalty +].
 
-[+ cjcos_image +]
+<div style="text-align: center">[+ cjcos_image +]</div>
 
 = Foreign Affairs
 
