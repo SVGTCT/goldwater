@@ -656,7 +656,7 @@ Q.bureau_size = 29000;
 Q.mil_relation = 65; 
 Q.mil_loyalty = 0.60 ;
 Q.chief_of_staff = "General Earle Wheeler";
-Q.mil_effectiveness = 30;
+Q.mil_effectiveness = 44;
 Q.mil_size = 2660000;
 
 // Foreign Affairs
@@ -744,10 +744,8 @@ audio: shuffle music/1928_1930/FruhlingsliedMendelssohn.mp3 music/1928_1930/AUF_
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
-= 1928
+= Inauguration
 
-It is a bright time for German democracy. After a period of struggle, inflation is finally under control, and the economy is expanding steadily. In foreign policy, we have reached agreements with the Western powers and the Soviet Union that might make genuine peace a reality. 
-
-Now, the task of Social Democracy is to prepare for the next election. The bourgeois-right government of Wilhelm Marx is unpopular, and we stand to gain. Perhaps the next government will have a socialist majority.
+TBD
 
 
