@@ -3,7 +3,7 @@
 (5..14.9) <span style="color:#990000">frigid</span>
 (14.9..29.9) <span style="color:#cc0000">cold</span>
 (29.9..39.9) <span style="color:#e06666">cool</span>
-(39.9..54.9) <span style="color:#93c47d">neutral</span>
+(39.9..54.9) <span style="color:#f1c232">neutral</span>
 (54.9..64.9) <span style="color:#6aa84f">warm</span>
 (64.9..74.9) <span style="color:#38761d">friendly</span>
 (74.9..) <span style="color:#274e13">very friendly</span>
