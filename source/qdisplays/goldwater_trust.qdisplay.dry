@@ -1,10 +1,10 @@
 
-(..5) despises
-(6..15) hates
-(16..30) strongly dislikes
-(31..45) dislikes
-(46..60) trusts
-(61..75) likes
-(76..85) really likes
-(86..95) adores
-(96..100) worships
+(..5) <span style="color:#660000">despises</span>
+(6..15) <span style="color:#990000">hates</span>
+(16..30) <span style="color:#cc0000">strongly dislikes</span>
+(31..45) <span style="color:#e06666">dislikes</span>
+(46..60) <span style="color:#93c47d">trusts</span>
+(61..75) <span style="color:#6aa84f"likes</span>
+(76..85) <span style="color:#38761d">really likes</span>
+(86..95) <span style="color:#274e13">adores</span>
+(96..100) <span style="color:#073763">worships</span>
