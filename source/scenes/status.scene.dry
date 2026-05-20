@@ -16,17 +16,11 @@ if (Q.economic_growth) {
 
 = You
 
-[? if not goldwater_in_charge and not goldwater_event: <div style="text-align: center"><img src=\"img/portraits/MillerWilliam.jpg\" width=150px>
+[? if not goldwater_in_charge and not goldwater_event: <div style="text-align: center"><img src=\"img/portraits/MillerWilliam.jpg\" width=150px><br/><b>William Edward Miller</b><br/>Vice President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─New York</div> ?]
 
-<b>William Edward Miller</b><br/>Vice President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─New York</div> ?]
+[? if goldwater_event: <div style="text-align: center"><img src=\"img/portraits/GoldwaterBarry.jpg\" width=150px><br/><b>Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
 
-[? if goldwater_event: <div style="text-align: center"><img src=\"img/portraits/GoldwaterBarry.jpg\" width=150px>
-
-<b>Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
-
-[? if goldwater_in_charge: <div style="text-align: center"><img src=\"img/portraits/GeneralGoldwater.jpg\" width=150px>
-
-<b>Maj Gen Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
+[? if goldwater_in_charge: <div style="text-align: center"><img src=\"img/portraits/GeneralGoldwater.jpg\" width=150px><br/><b>Maj Gen Barry Goldwater</b><br/>President<br/><b><span style=\"color: #FF0000;\">Republican</span></b>─Arizona</div> ?]
 
 = Status
 
