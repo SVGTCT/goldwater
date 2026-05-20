@@ -14,6 +14,13 @@ if (Q.economic_growth) {
 }
 !}
 
+= You
+
+<div style="text-align: center"><img src="out/html/img/portraits/MillerWilliam.jpg" width=150px></img>
+<b>William Edward Miller</b>
+Vice President
+<b><span style="color: #FF0000;">Republican</span></b>─New York</div>
+
 = Status
 
 [+ month : month +] [+ year +]
@@ -27,8 +34,6 @@ Goldwater [+ goldwater_trust : goldwater_trust +] you.
 = Government
 
 President: [+ president +] (<b>[+ president_party +]</b>─[+ president_state +])
-
-Vice President: William Edward Miller (<b><span style="color: #FF0000;">R</span></b>─NY)
 
 House of Representatives composition:
 
