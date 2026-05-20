@@ -587,6 +587,16 @@ go-to: disclaimer
 on-arrival: {!
 //New variables
 
+//Images
+
+main_photo = "<img src=\"\img/portraits/MillerWilliam.jpg\"\ width=150px>";
+main_man = "William Edward Miller";
+main_state = "New York";
+main_party = "<span style=\"\color: #FF0000;\"\>Republican</span>";
+main_role = "Vice President";
+fbi_director_image = "<img src=\"\img/portraits/HooverEdgarJ.jpg\"\ width=150px>";
+cjcos_image = "<img src=\"\img/portraits/WheelerEarle.jpeg\"\ width=150px>";
+
 //Status
 
 Q.goldwater_trust = 55;
