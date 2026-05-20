@@ -590,7 +590,7 @@ on-arrival: {!
 //Status
 
 Q.goldwater_trust = 55;
-Q.leverage = 6;
+Q.miller_leverage = 6;
 
 //Government
 
