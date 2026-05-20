@@ -1,6 +1,13 @@
 title: Post Event
 new-page: true
 on-arrival: {!
+
+// News
+
+if (Q.month == 1 && year == 1965) {
+    Q.monthly_news = "Barry Goldwater is sworn in as President of the United States.<br/><br/>The state funeral of Sir Winston Churchill takes place in London with the largest attendance of dignitaries ever seen."
+}
+
 Q.last_advisor_action = 0;
 // make sure no stat is below 0.
 for (var c of Q.classes) {
