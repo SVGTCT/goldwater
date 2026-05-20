@@ -583,13 +583,40 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 set-bg: img/map_2.jpg
 new-page: true
 
-> *"Such a general development cannot be attributed to the false tactics of any single party or to the mistakes of individual leaders. On the contrary, the conduct of individual leaders is determined largely by the sentiments of the people as a whole. It would be erroneous, however, to regard the sentiments of the moment as reflecting the natural make-up and character of the people. They are merely the consequence of the special circumstances which have brought about this profound degradation of the entire nation."*
-
- - Karl Kautsky, *Hitlerism and Social Democracy*, 1934
+<i><b>Note:</i></b>
 
 This is a game of alternate history. While historical accuracy is a major concern, keep in mind that this is a *game*, and that any divergence from actual events will necessarily have to involve some element of make-believe. Nevertheless, please let the author know if there are any glaring mistakes.
 
-For more information on the politics and government of the German Republic, see the "Library" page on the top left. If this is your first time playing the game, it is strongly recommended that you read at least some of this information.
+This game is a modded version of **<i><span style="color: #FF0000;">Social Democracy: An Alternate History</span></i>**, by Autumn Chen, which can be found <a href="https://red-autumn.itch.io/social-democracy" target="_blank"><span style="color:#900">here</a></span>. I would highly recommend you play it first to familiarise yourself with the game mechanics. 
+
+For more information on the scenario, consult the "Mod Info" section at the start for a brief overview, or the Library for more detail. (HEAVY WIP)
+
+Disclaimer: you will be able to subvert democracy and encourage segregation in this game, as well as other unruly things. Their inclusion does not mean I support them. <b>I do not</b>.
+
+ - @start_overview: I understand
+
+@start_overview
+
+In 1945, the United States dropped the nuclear bomb on the Japanese cities of Hiroshima and Nagasaki. This inhumane calamity led to the deaths of 150,000 to 250,000 people. Arguably, it ended World War II. But was it worth it?
+
+Twenty years later, the United States was again on the verge of using nuclear weapons. Domestic instability had led to the election of hardline Republican Barry Goldwater to the presidency, who had promised to use nuclear weapons to bring about the end to the Vietnam War. At home, the new president sought to implement his libertarian economic agenda, and push for states' rights against a federal desegregation push. Scary stuff.
+
+You, the player, get to step into the shoes of Goldwater's number two, vice president William Edward Miller. Miller has had an impressive legal career, rising to the second-highest office in the land from virtually nothing. No longer will his opponents chant <i>Here's a riddle, it's a killer / Who the hell is William Miller?"</i>; now he's a household name. He's also the first Catholic to be nominated by the Republican Party for his office, and the first to hold it. Keep that in mind, it could be important later.
+
+As Miller, you have a moral calling: stop a nuclear war. Beside that, you can guide the administration's other policies, such as on the economy and segregation, as well as influence the nation culturally.
+
+Good luck.
+
+@answer_the_call: Answer the call.
+@difficulty_menu: I want a different challenge.
+
+@answer_the_call
+subtitle: Intended way of playing: normal difficulty with easy mechanics.
+on-arrival: difficulty = -1;
+go-to: 1928_main
+
+@difficulty_menu
+subtitle: This will take you to the menu to adjust the difficulty of the game.
 
 - @1928_easy: Begin (easy difficulty)
 - @1928_main: Begin (normal difficulty)
