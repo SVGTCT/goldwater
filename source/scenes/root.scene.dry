@@ -599,6 +599,7 @@ Disclaimer: you will be able to subvert democracy and encourage segregation in t
 - @start_overview: I understand.
 
 @start_overview
+new-page: true
 on-arrival: difficulty = -1;
 
 In 1945, the United States dropped the nuclear bomb on the Japanese cities of Hiroshima and Nagasaki. This inhumane calamity led to the deaths of 150,000 to 250,000 people. Arguably, it ended World War II. But was it worth it?
