@@ -105,6 +105,6 @@ Why would we do this? The DoD, Goldwater, and the armed forces begin to turn aga
 @speaking_tour
 subtitle: Costs 1 resource. Takes two months.
 choose-if: resources > 0
-on-arrival: leverage += 1; mil_loyalty += 10; resources -= 1; month_actions += 1; vietnam_effectiveness += 2;
+on-arrival: leverage += 1; mil_loyalty += 10; resources -= 1; month += 1; vietnam_effectiveness += 2;
 
 You embark on a dangerous trip to Vietnam (though you stay far from real danger), boosting morale among the troops and endearing yourself to the administration. Good work.
