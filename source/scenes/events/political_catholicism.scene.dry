@@ -1,6 +1,6 @@
 title: A Higher Calling
 subtitle: Reflecting on history.
-view-if: year = 1965 and month = 2
+view-if: year = 1965 and (month = 2 or month = 3)
 max-visits: 1
 tags: event
 new-page: true
