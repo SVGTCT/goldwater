@@ -76,7 +76,7 @@ on-arrival: mil_effectivness += 5; goldwater_trust += 1; cjcos_change_pt += 0.5;
 We invest in the US Air Force. This will help our bombing capabilities in the Vietnam War, and increases military effectiveness overall.
 
 @naval
-on-arrrival: mil_effectivness += 5; cjcos_change_pt += 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer"; mil_loyalty += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer";
+on-arrival: mil_effectivness += 5; cjcos_change_pt += 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer"; mil_loyalty += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer";
 
 We invest in the US Navy. This will help us in the Vietnam War.
 
