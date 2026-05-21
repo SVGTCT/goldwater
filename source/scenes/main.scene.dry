@@ -3,16 +3,6 @@ set-bg: img/map_2.jpg
 is-hand: true
 on-arrival: {!
 
-// News
-
-if (Q.month == 2 && Q.year == 1965) {
-    Q.monthly_news = "Canada adopts the maple leaf flag, replacing the Red Ensign."
-}
-
-if (Q.month == 2 && Q.year == 1965) {
-   Q.monthly_news = "Black power activist <span class=\"tooltip-text\" title=\"<img src=\"img/Malcolm_X_bullet_holes2.jpg\" width=50px><br/>Gone.\">Malcolm X</span> is gunned down while giving a speech. <span class=\"tooltip-text\" title=\"<img src=\"img/portraits/MuhammadElijah.jpg\" width=50px><br/>Leader of the Nation of Islam.\">Elijah Muhammad</span>: \"Malcolm X got just what he preached.\""
-}
-
 // Advisors
 
 if (Q.advisor_action_timer <= 0) {
