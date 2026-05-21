@@ -1,6 +1,6 @@
 
-(1..1) Barry Goldwater is sworn in as President of the United States.<br/><br/>The state funeral of Sir Winston Churchill takes place in London with the largest attendance of dignitaries ever seen.
-(2..2) Canada adopts the maple leaf flag, replacing the Red Ensign.
+(1..1) Barry Goldwater is sworn in as President of the United States.<br/><br/>The state funeral of Sir Winston Churchill takes place in London with the largest attendance of dignitaries ever seen.<br/><img src="img/Churchill's_funeral_1965.jpg" width=100px>
+(2..2) <img src="img/Flag_of_Canada_(Pantone).svg" width=100px><br/><img src="img/Flag_of_Canada_(1957–1965).svg" width=100px><br/>Canada adopts the maple leaf flag, replacing the Red Ensign.
 (3..3) <img src="img/Malcolm_X_bullet_holes2.jpg" width=100px><br/>Black power activist <span class="tooltip-text" title="Gone.">Malcolm X</span> is gunned down while giving a speech. <span class="tooltip-text" title="Leader of the Nation of Islam">Elijah Muhammad</span>: "Malcolm X got just what he preached."<br/><img src="img/portraits/MuhammadElijah.jpg" width=100px>
 (4..4) April news
 (5..5) May news
