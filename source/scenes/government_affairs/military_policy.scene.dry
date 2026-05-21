@@ -13,7 +13,7 @@ Defense is a cornerstone of the Goldwater administration's policies. With Laird 
 
 [? if chief_of_staff = "Admiral Thomas Hinman Moorer": We have arranged the military's leadership to our liking. ?] [? if chief_of_staff != "Admiral Thomas Hinman Moorer": The President seeks to replace the current Chairman of the Joint Chiefs of Staff with his ally, Admiral Thomas Hinman Moorer. However, the previous administration's appointment only rose to the post in 1964, making this difficult. ?]
 
-The Vietnam War is also a major issue. Our forces' efforts there remain [+ vietnam_effectiveness +], while on the whole the armed forces are [+ mil_effectiveness +].
+The Vietnam War is also a major issue. Our forces' efforts there remain [+ vietnam_effectiveness : effectiveness +], while on the whole the armed forces are [+ mil_effectiveness : effectiveness +].
 
 - @war_guilt: Take actions in Vietnam.
 - @leadership: Work with the military's leadership.
