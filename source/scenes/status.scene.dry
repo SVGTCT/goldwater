@@ -137,4 +137,4 @@ Our relations with the South Vietnamese are [+ south_vietnam_relation : relation
 
 = News
 
-[+ monthly_news +]
+[? if year = 1965: [+ month : monthly_news +] ?]
