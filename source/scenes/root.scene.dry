@@ -9,6 +9,7 @@ go-to: start_menu_2
 = Social Democracy: An Alternate History
 
 @start_menu_2
+new-page: true
 
 - @start: Start game
 - @election_simulation: Mod Info
