@@ -1,7 +1,7 @@
 
 (1..1) Barry Goldwater is sworn in as President of the United States.<br/><br/>The state funeral of Sir Winston Churchill takes place in London with the largest attendance of dignitaries ever seen.
 (2..2) Canada adopts the maple leaf flag, replacing the Red Ensign.
-(3..3) Black power activist <span class="mytooltip" mytooltiptext="<img src=img/Malcolm_X_bullet_holes2.jpg width=50px><br/>Gone.">Malcolm X</span> is gunned down while giving a speech. <span class="mytooltip" mytooltiptext="<img src=img/portraits/MuhammadElijah.jpg width=50px><br/>Leader of the Nation of Islam.">Elijah Muhammad</span>: "Malcolm X got just what he preached.""
+(3..3) Black power activist <span class="mytooltip">Malcolm X<span class="mytooltiptext"><img src="img/Malcolm_X_bullet_holes2.jpg" width=50px><br/>Gone.</span></span> is gunned down while giving a speech. <span class="mytooltip">Elijah Muhammad<span class="mytooltiptext"><img src="img/portraits/MuhammadElijah.jpg" width=50px><br/>Leader of the Nation of Islam.</span></span>: "Malcolm X got just what he preached."
 (4..4) April news
 (5..5) May news
 (6..6) June news
