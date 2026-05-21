@@ -20,6 +20,9 @@ The Vietnam War is also a major issue. Our forces' efforts there remain [+ vietn
 - @funding_increase: Increase funding for the armed forces.
 - @funding_decrease: Cut funding for the armed forces.
 - @speaking_tour: Go on a speaking tour for the troops.
+- @return: Do not enact any policies for now.
+- @easy_discard
+- @cancel_advisor_action
 
 @leadership
 
