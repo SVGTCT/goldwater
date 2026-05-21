@@ -106,6 +106,10 @@ if (Q.dissent < 0) {
 if (Q.month_actions >= 1) {
     Q.time += 1;
     Q.month_actions = 0;
+    if (Q.double_month == 1) {
+        Q.month += 1; 
+        Q.double_month = 0;
+    }
     Q.month += 1;
     if (Q.month >= 13) {
         Q.month = 1;
