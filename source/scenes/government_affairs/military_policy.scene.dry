@@ -49,7 +49,7 @@ We work with leading figures in the Department of Defense and the armed forces t
 @sack_wheeler
 unavailable_subtitle: [? if chief_of_staff = "Admiral Thomas Hinman Moorer": We have already done this. ?] [? if cjcos_change_pt < 3: More work needs to be done. ?] [? if mil_relation < 56: Our relations are not good enough. ?] [? if mil_loyalty < 0.56: The military's loyalty is not high enough. ?]
 choose-if: chief_of_staff = "General Earle Wheeler" and cjcos_change_pt > 2 and mil_relation > 55 and mil_loyalty > 0.55
-on-arrival: soviet_relation -= 2; vietnam_relation -= 5; vietnam_talks -= 1; mil_relation = 80; mil_loyalty += 0.15; mil_effectiveness += 20; vietnam_effectiveness += 15; goldwater_trust += 10; leverage -= 3 if goldwater_trust < 66; leverage += 3 if goldwater_trust > 65; chief_of_staff = "Admiral Thomas Hinman Moorer";
+on-arrival: soviet_relation -= 2; vietnam_relation -= 5; vietnam_talks -= 1; mil_relation = 80; mil_loyalty += 0.15; mil_effectiveness += 20; vietnam_effectiveness += 15; goldwater_trust += 10; miller_leverage -= 3 if goldwater_trust < 66; miller_leverage += 3 if goldwater_trust > 65; chief_of_staff = "Admiral Thomas Hinman Moorer";
 view-if: chief_of_staff = "Admiral Thomas Hinman Moorer" or chief_of_staff = "General Earle Wheeler"
 
 #1967: USS Liberty Crisis. Having Moorer in charge will not permit a cover-up.
@@ -98,13 +98,13 @@ We pour money into building bigger and better technologies across the armed forc
 
 @funding_decrease
 subtitle: Will add 1 budget.
-on-arrival: haiphong_pt -= 2; haiphong_infra -= 1; budget += 1; goldwater_trust -= 10; mil_relation -= 10; mil_loyalty -= 0.10; mil_effectiveness -= 5; vietnam_effectivness -= 10; leverage -= 3 if leverage >= 3; leverage = 0 if leverage < 3;
+on-arrival: haiphong_pt -= 2; haiphong_infra -= 1; budget += 1; goldwater_trust -= 10; mil_relation -= 10; mil_loyalty -= 0.10; mil_effectiveness -= 5; vietnam_effectivness -= 10; miller_leverage -= 3 if miller_leverage >= 3; miller_leverage = 0 if miller_leverage < 3;
 
 Why would we do this? The DoD, Goldwater, and the armed forces begin to turn against you. More funds are made available elsewhere, helping balance the budget.
 
 @speaking_tour
 subtitle: Costs 1 resource. Takes two months.
 choose-if: resources > 0
-on-arrival: leverage += 1; mil_loyalty += 10; resources -= 1; double_month = 1; vietnam_effectiveness += 2;
+on-arrival: miller_leverage += 1; mil_loyalty += 10; resources -= 1; double_month = 1; vietnam_effectiveness += 2;
 
 You embark on a dangerous trip to Vietnam (though you stay far from real danger), boosting morale among the troops and endearing yourself to the administration. Good work.
