@@ -71,7 +71,7 @@ We can increase funding in a number of areas.
 - @innovation: Invest in developing better technologies.
 
 @air_force
-on-arrrival: mil_effectivness += 5; goldwater_trust += 1; cjcos_change_pt += 0.5; haiphong_pt += 1; vietnam_effectiveness += 10;
+on-arrival: mil_effectivness += 5; goldwater_trust += 1; cjcos_change_pt += 0.5; haiphong_pt += 1; vietnam_effectiveness += 10;
 
 We invest in the US Air Force. This will help our bombing capabilities in the Vietnam War, and increases military effectiveness overall.
 
