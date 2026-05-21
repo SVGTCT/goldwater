@@ -511,7 +511,7 @@ if (Q.month == 2 && Q.year == 1965) {
 }
 
 if (Q.month == 3 && Q.year == 1965) {
-   Q.monthly_news = "Black power activist <span class=\"tooltip-text\" title=\"<img src=img/Malcolm_X_bullet_holes2.jpg width=50px><br/>Gone.\">Malcolm X</span> is gunned down while giving a speech. <span class=\"tooltip-text\" title=\"<img src=img/portraits/MuhammadElijah.jpg width=50px><br/>Leader of the Nation of Islam.\">Elijah Muhammad</span>: \"Malcolm X got just what he preached.\""
+   Q.monthly_news = "Black power activist <span class=\"mytooltipt\" explanationText=\"<img src=img/Malcolm_X_bullet_holes2.jpg width=50px><br/>Gone.\">Malcolm X</span> is gunned down while giving a speech. <span class=\"mytooltip\" explanationText=\"<img src=img/portraits/MuhammadElijah.jpg width=50px><br/>Leader of the Nation of Islam.\">Elijah Muhammad</span>: \"Malcolm X got just what he preached.\""
 }
 !}
 go-to: events_choice if has_event = 1; main if has_event = 0 and difficulty >= 0; main.main_easy if has_event = 0 and difficulty < 0
