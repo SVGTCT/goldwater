@@ -615,7 +615,7 @@ function addDynamicCSS() {
 addDynamicCSS();
 
 tooltipList = [
-    {searchString: "Party Affairs", explanationText: "test"},
+    {searchString: "United States", explanationText: "test"},
 ];
 
     function getTooltips(str) {
@@ -676,4 +676,5 @@ function applyTooltipsToObject(obj) {
     }
 }
 
-applyTooltipsToObject(all);
+applyTooltipsToObject(status.scene.dry);
+applyTooltipsToObject(source/scenes/status.scene.dry);
