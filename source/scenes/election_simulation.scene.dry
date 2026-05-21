@@ -4,6 +4,7 @@ title: Mod Info
 - @info_1964_pres: 1964 Presidential Election
 - @info_1964_house: 1964 House Elections
 - @info_1964_sen: 1964 Senate Elections
+- @start_menu_2: Back to Main Menu
 
 @info_premise
 
@@ -24,21 +25,25 @@ There is an element of exaggeration. Goldwater never did advocate for using nuke
 Have fun!
 
 - @election_simulation: Return
+- @start_menu_2: Back to Main Menu
 
 @info_1964_pres
 
 WIP
 
 - @election_simulation: Return
+- @start_menu_2: Back to Main Menu
 
 @info_1964_house
 
 WIP
 
 - @election_simulation: Return
+- @start_menu_2: Back to Main Menu
 
 @info_1964_sen
 
 WIP
 
 - @election_simulation: Return
+- @start_menu_2: Back to Main Menu
