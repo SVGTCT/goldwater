@@ -33,7 +33,7 @@ We can work with the military's leadership.
 subtitle: Costs 1 leverage.
 unavailable-subtitle: [? if miller_leverage < 1 : Requires 1 leverage. ?]
 choose-if: miller_leverage > 0
-on-arrival: mil_relation += 5; mil_loyalty += 5; miller_leverage -= 1; goldwater_trust -= 2;
+on-arrival: mil_relation += 5; mil_loyalty += 0.05; miller_leverage -= 1; goldwater_trust -= 2;
 
 We branch out to [+ chief_of_staff +], improving the administration's relationship with him, and building mutual trust between us.
 
@@ -42,14 +42,14 @@ view-if: chief_of_staff = "General Earle Wheeler"
 subtitle: Costs 1 leverage & 1 resource.
 unavailable-subtitle: [? if miller_leverage < 1 : Requires 1 leverage. ?] [? if resources < 1 : Requires 1 resource. ?]
 choose-if: miller_leverage > 0 and resources > 0
-on-arrival: mil_relation -= 10; mil_loyalty -= 10; miller_leverage -= 1; resources -= 1; cjcos_change_pt += 1; mil_effectiveness -= 5; goldwater_trust += 2; vietnam_effectiveness -= 5;
+on-arrival: mil_relation -= 10; mil_loyalty -= 0.10; miller_leverage -= 1; resources -= 1; cjcos_change_pt += 1; mil_effectiveness -= 5; goldwater_trust += 2; vietnam_effectiveness -= 5;
 
 We work with leading figures in the Department of Defense and the armed forces to turn the tide against Wheeler. Obviously, he is not pleased.
 
 @sack_wheeler
-unavailable_subtitle: [? if chief_of_staff = "Admiral Thomas Hinman Moorer": We have already done this. ?] [? if cjcos_change_pt < 3: More work needs to be done. ?] [? if mil_relation < 56: Our relations are not good enough. ?] [? if mil_loyalty < 56: The military's loyalty is not high enough. ?]
-choose-if: chief_of_staff = "General Earle Wheeler" and cjcos_change_pt > 2 and mil_relation > 55 and mil_loyalty > 55
-on-arrival: soviet_relation -= 2; vietnam_relation -= 5; vietnam_talks -= 1; mil_relation = 80; mil_loyalty += 15; mil_effectiveness += 20; vietnam_effectiveness += 15; goldwater_trust += 10; leverage -= 3 if goldwater_trust < 66; leverage += 3 if goldwater_trust > 65; chief_of_staff = "Admiral Thomas Hinman Moorer";
+unavailable_subtitle: [? if chief_of_staff = "Admiral Thomas Hinman Moorer": We have already done this. ?] [? if cjcos_change_pt < 3: More work needs to be done. ?] [? if mil_relation < 56: Our relations are not good enough. ?] [? if mil_loyalty < 0.56: The military's loyalty is not high enough. ?]
+choose-if: chief_of_staff = "General Earle Wheeler" and cjcos_change_pt > 2 and mil_relation > 55 and mil_loyalty > 0.55
+on-arrival: soviet_relation -= 2; vietnam_relation -= 5; vietnam_talks -= 1; mil_relation = 80; mil_loyalty += 0.15; mil_effectiveness += 20; vietnam_effectiveness += 15; goldwater_trust += 10; leverage -= 3 if goldwater_trust < 66; leverage += 3 if goldwater_trust > 65; chief_of_staff = "Admiral Thomas Hinman Moorer";
 view-if: chief_of_staff = "Admiral Thomas Hinman Moorer" or chief_of_staff = "General Earle Wheeler"
 
 #1967: USS Liberty Crisis. Having Moorer in charge will not permit a cover-up.
@@ -60,7 +60,7 @@ We have successfully replaced Wheeler with Admiral Hinman Moorer. This will enab
 
 @funding_increase
 subtitle: Costs 1 budget.
-on-arrival: mil_relation += 5; mil_loyalty += 5; budget -= 1;
+on-arrival: mil_relation += 5; mil_loyalty += 0.05; budget -= 1;
 
 We can increase funding in a number of areas.
 
@@ -76,17 +76,17 @@ on-arrival: mil_effectivness += 5; goldwater_trust += 1; cjcos_change_pt += 0.5;
 We invest in the US Air Force. This will help our bombing capabilities in the Vietnam War, and increases military effectiveness overall.
 
 @naval
-on-arrival: mil_effectivness += 5; cjcos_change_pt += 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer"; mil_loyalty += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer";
+on-arrival: mil_effectivness += 5; cjcos_change_pt += 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "Admiral Thomas Hinman Moorer"; mil_loyalty += 0.05 if chief_of_staff = "Admiral Thomas Hinman Moorer";
 
 We invest in the US Navy. This will help us in the Vietnam War.
 
 @tanks
-on-arrival: mil_effectivness += 5; cjcos_change_pt -= 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "General Earle Wheeler"; mil_loyalty += 5 if chief_of_staff = "General Earle Wheeler";
+on-arrival: mil_effectivness += 5; cjcos_change_pt -= 0.5; vietnam_effectiveness += 5; mil_relation += 5 if chief_of_staff = "General Earle Wheeler"; mil_loyalty += 0.05 if chief_of_staff = "General Earle Wheeler";
 
 We invest in armored vehicles and tanks. This will help us in the Vietnam War.
 
 @conventional
-on-arrival: mil_loyalty += 10; mil_relation += 5 if chief_of_staff = "General Earle Wheeler";
+on-arrival: mil_loyalty += 0.10; mil_relation += 5 if chief_of_staff = "General Earle Wheeler";
 
 We invest in conventional equipment. This is popular with the average soldier fighting in Vietnam.
 
@@ -98,7 +98,7 @@ We pour money into building bigger and better technologies across the armed forc
 
 @funding_decrease
 subtitle: Will add 1 budget.
-on-arrival: haiphong_pt -= 2; haiphong_infra -= 1; budget += 1; goldwater_trust -= 10; mil_relation -= 10; mil_loyalty -= 10; mil_effectiveness -= 5; vietnam_effectivness -= 10; leverage -= 3 if leverage >= 3; leverage = 0 if leverage < 3;
+on-arrival: haiphong_pt -= 2; haiphong_infra -= 1; budget += 1; goldwater_trust -= 10; mil_relation -= 10; mil_loyalty -= 0.10; mil_effectiveness -= 5; vietnam_effectivness -= 10; leverage -= 3 if leverage >= 3; leverage = 0 if leverage < 3;
 
 Why would we do this? The DoD, Goldwater, and the armed forces begin to turn against you. More funds are made available elsewhere, helping balance the budget.
 
