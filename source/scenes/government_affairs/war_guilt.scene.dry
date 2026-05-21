@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs
 on-arrival: war_guilt_timer = 6; month_actions += 1
 view-if: war_guilt_timer = 0
-#card-image: WIP
+card-image: img/Enemy_situation,_early_1964.jpg
 
 = The Vietnam War
 
