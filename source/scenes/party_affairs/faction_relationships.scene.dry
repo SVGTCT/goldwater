@@ -1,9 +1,9 @@
 title: Factional Relationships
 new-page: true
-view-if: year <= 1968 and faction_party_relationships_timer <= 0
+view-if: year <= 1968 and faction_relationships_timer <= 0
 tags: party_affairs
 is-card: true
-on-arrival: month_actions += 1; faction_party_relationships_timer = 6;
+on-arrival: month_actions += 1; faction_relationships_timer = 6;
 card-image: img/Carl Albert, Barry Goldwater, Robert L. F. Sikes, and others standing on the steps of the Capitol.jpg
 max-visits: 12
 #subtitle: Building working relations with the other political factions in the United States.
