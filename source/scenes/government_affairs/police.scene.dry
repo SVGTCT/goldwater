@@ -1,61 +1,110 @@
-title: Internal Security
+title: The FBI
 new-page: true
 is-card: true
 tags: govt_affairs, cabinet
 on-arrival: police_timer += 6; month_actions += 1
-view-if: spd_in_government = 1 and interior_minister_party = "SPD" and police_timer <= 0
-card-image: img/portraits/SeveringCarl.jpg
+view-if: police_timer <= 0 and not police_const_amdmt
+card-image: img/_WARNING_FROM_THE_FBI__-_NARA_-_516039.jpg
 
-= Internal Security
+#TODO: public support effect
 
-The Interior Ministry controls internal security throughout the German Republic. While most police work is delegated to the states, the national security agency can perform special investigations.
+= The FBI
 
-As with the state police units and the Reichswehr, the internal police tends to be reactionary, and has serious issues with loyalty to the elected government of the Republic.
+The <span class="tooltip-text" title="Federal Bureau of Investigation">FBI</span> has, since its creation, been led by J. Edgar Hoover. Thanks to this, he has set the cards in his favour with a large amount of dirt on Washington. However, he also makes himself useful by targeting the subversive groups we also hate.
 
-- @loyalty: Improve the loyalty of the Interior Ministry forces.
-- @investigate_corruption: Investigate corruption by big businesses.
-- @investigate_far_right: Investigate illegal activity among the far right.
-- @domestic_enemies: Investigate or ban our domestic enemies.
-- @deport_hitler
+- @increase_funding: Increase funding for the FBI's conventional operations.
+- @increase_funding_covert: Increase funding for the FBI's covert operations.
+- @cut_funding: Cut funding for the FBI.
+- @work: Work with the FBI's leadership.
+- @enemies: Use the FBI to go after our enemies.
+- @leverage: Work to get rid of incriminating evidence against us and our allies.
+- @push_federalise: Push for a constitutional amendment placing the police solely in federal hands.
+- @federalise: Federalise the police, integrating them into the FBI's ranks.
 - @root: Take no action for now.
 - @easy_discard
 - @cancel_advisor_action
 
-@loyalty
-on-arrival: interior_police_loyalty += 0.1
+@increase_funding
+subtitle: Plainclothes and uniformed policing operations, weapons, and equipment. Costs 1 budget.
+on-arrival: budget -= 1; bureau_relation += 5; bureau_effectiveness += 5; bureau_size += 2000; bureau_loyalty += 0.02; police_expansion_pt += 1;
 
-As with the Prussian state police, there are measures we can take to root out reactionary and anti-democratic sentiment in the police. We can improve training and recruiting procedures, and identify and remove known fascists and the like.
+By increasing our police apparatus, we endear ourselves to the Bureau's leadership, improve its efficacy, and improve our standing with the public.
 
-Current interior police loyalty: [+ interior_police_loyalty : loyalty +]
+@increase_funding_covert
+subtitle: Wiretapping, surveillance, undercover work, and specialist training. Costs 1.5 budget.
+on-arrival: budget -= 1.5; bureau_relation += 10; bureau_effectiveness += 15; bureau_size += 500; bureau_loyalty += 0.05; police_expansion_pt += 2;
 
+This improves our standing with the Bureau and greatly improves its efficacy.
 
-@investigate_corruption
-go-to: investigate_corruption_success if interior_police_loyalty >= 0.5; investigate_corruption_failure if interior_police_loyalty < 0.5
+@cut_funding
+subtitle: This will add 1 budget.
+on-arrival: budget += 1; bureau_relation -= 10; bureau_effectiveness -= 10; bureau_size -= 2000; bureau_loyalty -= 0.05; police_expansion_pt -= 1; goldwater_trust += 5;
 
-@investigate_corruption_success
-on-arrival: investigate_corruption += 1; workers_spd += 5*(1-dissent); inflation -= 0.1 if inflation > 3; inflation -= 0.2 if inflation >= 8
+#to do note: Hoover's ultimatum, if relations too low
 
-Corruption in big business is rampant, of course. We have uncovered a number of scandals, and publicizing them brings new attention to the work of Interior Minister [+ interior_minister +], building up his popular appeal and that of the SPD.
+The FBI begins to turn against the administration, but with all the state police forces that can cope with the cuts, this is a good way to make use of our promises to cut federal spending.
 
+@work
 
-@investigate_corruption_failure
+We can work with the Bureau's leadership.
 
-Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the police.
+- @improve_relations: Improve relations with [+ bureau_director +].
+- @brew_change: Work against Hoover.
+- @sack_wheeler: Replace Hoover with Clarence M. Kelley.
 
-@investigate_far_right
-go-to: investigate_far_right_success if interior_police_loyalty >= 0.55; investigate_far_right_failure if interior_police_loyalty < 0.55
+@improve_relations
+subtitle: Costs 1 leverage.
+unavailable-subtitle: [? if miller_leverage < 1 : Requires 1 leverage. ?]
+choose-if: miller_leverage > 0
+on-arrival: bureau_relation += 5; bureau_loyalty += 0.05; miller_leverage -= 1; goldwater_trust -= 2;
 
-@investigate_far_right_success
-on-arrival: investigate_far_right += 1; sa_strength -= 20; workers_nsdap -= 3; new_middle_nsdap -= 3; nazi_urgency += 1 if investigate_far_right == 2; nazi_urgency += 2 if investigate_far_right == 3; workers_nsdap -= 3 if investigate_far_right == 3; new_middle_nsdap -= 3 if investigate_far_right == 3; old_middle_nsdap -= 3 if investigate_far_right == 3; unemployed_spd -= 3 if investigate_far_right == 3; coup_progress -= 1 if coup_progress >= 7
+We branch out to [+ bureau_director +], improving the administration's relationship with him, and building mutual trust between us.
 
-[? if investigate_far_right == 1 : We have discovered collusion between Hjalmar Schacht, president of the Reichsbank, and the Nazis. This is very useful information. ?]
-[? if investigate_far_right == 2 : We have discovered illegal arms smuggling by the SA, the Nazi paramilitary. ?]
-[? if investigate_far_right == 3 : We have discovered a secret cache of documents from the NSDAP detailing their plan to violently take over the country if they enter into power. This is an anti-constitutional plot, and will be publicized and persecuted. ?]
-[? if investigate_far_right > 3 : Of course the Nazis are doing crimes; everyone knows that. Now, we finally have proof. ?]
+@brew_change
+subtitle: Removing Hoover will be difficult, if not impossible.
+unavailable-subtitle: Requires 3 leverage & 3 resources.
+choose-if: miller_leverage >= 3 and resources >= 3
+on-arrival: miller_leverage -= 3; resources -= 3; bureau_relation -= 15; bureau_loyalty -= 0.15; bureau_effectiveness -= 5; goldwater_trust -= 5; hoover_change_pt += 1;
 
-[? if coup_progress >= 6: There are reports of an imminent coup by the far-right. We have attempted to disrupt some of these plans, but the threat is still present. ?]
+We work with leading figures in the Bureau to turn the tide against Hoover. Obviously, he is not pleased. Our work is made difficult by his stacking of loyalists in top positions.
 
+@sack_wheeler
+view-if: hoover_change_pt >= 6
 
-@investigate_far_right_failure
+WIP ─ would see Wheeler replaced with a transition figure.
 
-Unfortunately, our investigations have failed to turn up anything. Rumors are that the targets of our investigation were tipped off by infiltrators within the police.
+@enemies
+view-if: enemies != 0
+
+WIP ─ need to establish left-wing resistance strength and its effect.
+
+@leverage
+view-if: bureau_relation > 75 and bureau_director = "J. Edgar Hoover"
+#on-arrival: WIP
+
+WIP: would see a shift as your position gets stronger.
+
+@push_federalise
+view-if: police_expansion_pt >= 5 and bureau_size > 80000 and bureau_relation > 75 and bureau_effectiveness > 75 and bureau_director = "J. Edgar Hoover"
+choose-if: leverage >= 3 and resources >= 2
+subtitle: This would be very unpopular.
+#on-arrival: -3 leverage, -2 resources, +1 const amdmt point, 2 for event, plus domestic and admin effects (coalition)
+
+Merging the police into only one force would make it far more efficient, at least according to Hoover, as it would greatly increase his power. But as far as you are concerned, it would be a win for the small government crowd, actually, by simply streamlining policing in the United States. Goldwater disagrees. Vehemently.
+
+@federalise
+view-if: police_const_amdmt
+choose-if: goldwater_trust > 30 and miller_leverage >= 6
+unavailable-subtitle: Goldwater would not permit this.
+#on-arrival: WIP ─ changes to status bar from FBI to USFP, 335,000 new officers, admin and domestic effects, a lot more leverage in Hoover's hands
+achievement: usfp
+
+#work to do: add LW resistance variable
+
+Thanks to the formidable size and efficiency of the FBI, we are successfully able to merge the police structures around the country into the new "United States Federal Police", which has jurisdiction over policing affairs all over the country and incorporates over 300,000 law enforcement personnel into its ranks.
+
+Hoover, now director of the USFP, has an immense amount of power. We should be wary of that.
+
+However, you count this as a win. Your argument, which somehow the public accepted, was that a sole police force would simply streamline policing and benefit the public with less bureaucracy, even in a country this large.
+
+Only time will tell how big a blunder this was.
