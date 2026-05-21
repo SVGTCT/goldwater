@@ -15,7 +15,7 @@ Defense is a cornerstone of the Goldwater administration's policies. With Laird 
 
 The Vietnam War is also a major issue. Our forces' efforts there remain [+ vietnam_effectiveness +], while on the whole the armed forces are [+ mil_effectiveness +].
 
-- @war_guilt.vietnam_menu: Take actions in Vietnam.
+- @war_guilt: Take actions in Vietnam.
 - @leadership: Work with the military's leadership.
 - @funding_increase: Increase funding for the armed forces.
 - @funding_decrease: Cut funding for the armed forces.
