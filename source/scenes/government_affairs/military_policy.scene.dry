@@ -36,7 +36,7 @@ We can work with the military's leadership.
 subtitle: Costs 1 leverage.
 unavailable-subtitle: [? if miller_leverage < 1 : Requires 1 leverage. ?]
 choose-if: miller_leverage > 0
-on-arrival: mil_relation += 5; mil_loyalty += 0.05; miller_leverage -= 1; goldwater_trust -= 2;
+on-arrival: mil_relation += 5; mil_loyalty += 0.05; miller_leverage -= 1; goldwater_trust -= 2; cjcos_change_pt -= 1;
 
 We branch out to [+ chief_of_staff +], improving the administration's relationship with him, and building mutual trust between us.
 
