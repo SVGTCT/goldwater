@@ -180,11 +180,11 @@ blockquote + blockquote.attribution {
 }
 .tools.left {
   float: left;
-  left: 0.4em;
+  left: 0.2em;
 }
 .tools.right {
   float: right;
-  right: 0.4em;
+  right: 0.2em;
 }
 #qualities {
   text-indent: 0;
