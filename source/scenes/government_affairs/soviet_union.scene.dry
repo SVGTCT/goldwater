@@ -4,7 +4,7 @@ is-card: true
 tags: govt_affairs
 on-arrival: soviet_union_timer = 8; month_actions += 1
 view-if: soviet_union_timer = 0
-#card-image: WIP
+card-image: img/Friedrichstrasse_Crossing_Point_-_Flickr_-_The_Central_Intelligence_Agency.jpg
 
 # WIP: (TO DO) popular support needs added  
 
@@ -48,7 +48,7 @@ choose-if: resources >= 2 and miller_leverage >=6 and soviet_relation > 45 and p
 Thanks to our efforts in building relations with the Soviets, we host a meeting between leading figures in our governments. The world breathes a sigh of relief as the two superpowers move closer to peace. The conservative presence in government has only hate in their eyes when they look at you.
 
 @nuclear_freeze
-view-if: soviet relations > 50
+view-if: soviet_relation > 50
 unavailable-subtitle: [? if mil_loyalty <= 75: The military would never agree to this. ?] [? if not soviet_meeting: More work needs to be done to convince the Soviets. ?] [? if vietnam_relation <= 30 or china_detente = 0: The Soviets would not agree as our relations with Asia are too low. ?]
 choose-if: soviet_meeting and mil_loyalty > 75 and soviet_relation > 50 and vietnam_relation > 30 and china_detente < 0
 on-arrival: arms_freeze = 1; establishment_relation += 10; dixie_relation -= 15; warhawk_strength -= 15; warhawk_dissent += 15; conservative_dissent += 5; mainline_dissent += 5; libertarian_strength += 15; goldwater_trust -= 25; bureau_relation -= 10; bureau_loyalty -= 10;
