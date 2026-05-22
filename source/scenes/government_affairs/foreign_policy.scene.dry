@@ -37,6 +37,6 @@ We work on ridding the American continents of communism and bringing it under th
 subtitle: Costs 2 leverage.
 choose-if: miller_leverage > 1
 unavailable-subtitle: Not enough leverage. Costs 2.
-on-arrival: miller_leverage -= 2; china_detente += 1; vietnam_relation += 5; bureau_relation -= 5; soviet_relation -= 2; mil_relation -= 5; mil_loyalty -= 0.05; mil_effectiveness -= 5; vietnam_effectiveness += 2; mainline_dissent += 5; conservative_dissent += 5; warhawk_dissent += 5; goldwater_trust +=5;
+on-arrival: miller_leverage -= 2; china_detente += 1; vietnam_relation += 5; bureau_relation -= 5; soviet_relation -= 2; mil_relation -= 5; mil_loyalty -= 0.05; mil_effectiveness -= 5; vietnam_effectiveness += 2; mainline_dissent += 5; conservative_dissent += 5; warhawk_dissent += 5; goldwater_trust -=5;
 
 Though this is not universally popular, it's good to keep an open mind regarding an important new ally in Asia. Having a diplomatic figure like Smith in the DoS helps us, even if it's not what Goldwater planned.
