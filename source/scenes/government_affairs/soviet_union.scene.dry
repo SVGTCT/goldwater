@@ -25,7 +25,7 @@ The <span class="tooltip-text" title="Union of Soviet Socialist Republics (USSR)
 @improve_relations_secret
 subtitle: This is unpopular with both our countries' leaderships, and will have to be done in secret.
 unavailable-subtitle: [? if resources < 1: Costs 1 resource. ?] [? if miller_leverage < 1: Costs 1 leverage. ?]
-on-arrival: resources -= 1; miller_leverage -= 1; goldwater_trust -= 5; soviet_relation += 5; mil_relation -= 5; mil_loyalty -= 5; bureau_loyalty -= 10; bureau_relation -= 10; hoovers_cards += 1;
+on-arrival: resources -= 1; miller_leverage -= 1; goldwater_trust -= 5; soviet_relation += 5; mil_relation -= 5; mil_loyalty -= 0.05; bureau_loyalty -= 0.10; bureau_relation -= 10; hoovers_cards += 1;
 choose-if: miller_leverage > 0 and resources > 0
 
 Escalation is futile and only brings us closer to nuclear war, even if Goldwater can't see that. So in secret, sympathetic figures in the Soviet and American administrations meet to put the tensions behind us. Rumors circulate about black-suited and shaded men watching these meetings from afar.
@@ -33,7 +33,7 @@ Escalation is futile and only brings us closer to nuclear war, even if Goldwater
 @improve_relations_open  
 subtitle: Thanks to our government's popularity and ambivalent relation with the Soviets, we can do this in the open.
 unavailable-subtitle: [? if resources < 1: Costs 1 resource. ?] [? if miller_leverage < 3: Costs 3 leverage. ?] [? if public_approval <= 50: The public does not support it. ?]
-on-arrival: resources -= 1; miller_leverage -= 3; goldwater_trust -= 10; soviet_relation += 10; mil_relation -= 10; mil_loyalty -= 10; bureau_loyalty -= 10; bureau_relation -= 10; warhawk_strength -= 10; warhawk_dissent += 10; conservative_dissent += 5; mainline_dissent += 5; libertarian_strength += 5;
+on-arrival: resources -= 1; miller_leverage -= 3; goldwater_trust -= 10; soviet_relation += 10; mil_relation -= 10; mil_loyalty -= 0.10; bureau_loyalty -= 0.10; bureau_relation -= 10; warhawk_strength -= 10; warhawk_dissent += 10; conservative_dissent += 5; mainline_dissent += 5; libertarian_strength += 5;
 choose-if: miller_leverage > 2 and resources > 0 and soviet_relation > 30 and public_approval > 50
 view-if: soviet_relation > 30
 
@@ -42,16 +42,16 @@ Thanks to our efforts in improving relations with the Soviets, we can continue t
 @meet
 view-if: soviet_relation > 45
 unavailable-subtitle: [? if resources < 2: Costs 2 resources. ?] [? if miller_leverage < 6: Costs 6 leverage. ?] [? if public_approval <= 50: The public does not support it. ?]
-on-arrival: resources -= 2; miller_leverage -= 6; goldwater_trust -= 15; soviet_relation += 10; mil_relation -= 15; mil_loyalty -= 15; bureau_loyalty -= 15; bureau_relation -= 15; soviet_meeting = 1; warhawk_strength -= 10; warhawk_dissent += 15; conservative_dissent += 10; mainline_dissent += 10; libertarian_strength += 10; libertarian_dissent -= 5; dixie_relation -= 10; rockefeller_relation -= 5; establishment_relation -= 5;
+on-arrival: resources -= 2; miller_leverage -= 6; goldwater_trust -= 15; soviet_relation += 10; mil_relation -= 15; mil_loyalty -= 0.15; bureau_loyalty -= 0.15; bureau_relation -= 15; soviet_meeting = 1; warhawk_strength -= 10; warhawk_dissent += 15; conservative_dissent += 10; mainline_dissent += 10; libertarian_strength += 10; libertarian_dissent -= 5; dixie_relation -= 10; rockefeller_relation -= 5; establishment_relation -= 5;
 choose-if: resources >= 2 and miller_leverage >=6 and soviet_relation > 45 and public_approval > 50
 
 Thanks to our efforts in building relations with the Soviets, we host a meeting between leading figures in our governments. The world breathes a sigh of relief as the two superpowers move closer to peace. The conservative presence in government has only hate in their eyes when they look at you.
 
 @nuclear_freeze
 view-if: soviet_relation > 50
-unavailable-subtitle: [? if mil_loyalty <= 75: The military would never agree to this. ?] [? if not soviet_meeting: More work needs to be done to convince the Soviets. ?] [? if vietnam_relation <= 30 or china_detente = 0: The Soviets would not agree as our relations with Asia are too low. ?]
-choose-if: soviet_meeting and mil_loyalty > 75 and soviet_relation > 50 and vietnam_relation > 30 and china_detente < 0
-on-arrival: arms_freeze = 1; establishment_relation += 10; dixie_relation -= 15; warhawk_strength -= 15; warhawk_dissent += 15; conservative_dissent += 5; mainline_dissent += 5; libertarian_strength += 15; goldwater_trust -= 25; bureau_relation -= 10; bureau_loyalty -= 10;
+unavailable-subtitle: [? if mil_loyalty <= 0.75: The military would never agree to this. ?] [? if not soviet_meeting: More work needs to be done to convince the Soviets. ?] [? if vietnam_relation <= 30 or china_detente = 0: The Soviets would not agree as our relations with Asia are too low. ?]
+choose-if: soviet_meeting and mil_loyalty > 0.75 and soviet_relation > 50 and vietnam_relation > 30 and china_detente < 0
+on-arrival: arms_freeze = 1; establishment_relation += 10; dixie_relation -= 15; warhawk_strength -= 15; warhawk_dissent += 15; conservative_dissent += 5; mainline_dissent += 5; libertarian_strength += 15; goldwater_trust -= 25; bureau_relation -= 10; bureau_loyalty -= 0.10;
 #public support boost
 
 The world breathes easier as our connections force Goldwater and the Soviets to agree to cease increasing our nuclear stockpiles. Goldwater is mad, and so is the FBI.
