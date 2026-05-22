@@ -117,7 +117,7 @@ They are [+ mil_size +] strong. They are [+ mil_effectiveness : effectiveness +]
 
 The Chairman of the Joint Chiefs of Staff is [+ chief_of_staff +], who is [+ mil_loyalty : loyalty +].
 
-[? if chief_of_staff = "General Earle Wheeler": <div style="text-align: center"><img src="img/portraits/WheelerEarle.jpeg" width=150px></div> ?]
+[? if chief_of_staff = "General Earle Wheeler": <div style="text-align: center"><img src="img/portraits/WheelerEarle.jpeg" width=150px></div> ?][? if chief_of_staff = "Admiral Thomas Hinman Moorer": <div style="text-align: center"><img src="img/portraits/HinmanMoorerThomas.jpg" width=150px></div> ?]
 
 = Foreign Affairs
 
