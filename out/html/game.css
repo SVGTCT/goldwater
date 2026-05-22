@@ -2,6 +2,7 @@ body {
   font-family: "Courier", Georgia, serif;
   /*font-size: 1.125em;*/
   background-color: #f3f3e3;
+  font-size: 85%;
   padding: 0;
   line-height: 155%;
   overflow-y: scroll;
@@ -214,12 +215,13 @@ blockquote + blockquote.attribution {
     margin-right: -0.6em;
 }
 .tab_button {
-    font-family: "Minion Pro", Georgia, serif;
+    font-family: "Courier", Georgia, serif;
     background-color: #ddd;
     /*float: left;*/
     border: none;
     outline: none;
     padding: 10px;
+    font-size: 85%;
 }
 .tab_button.active {
     background-color: #f3f3f3;
