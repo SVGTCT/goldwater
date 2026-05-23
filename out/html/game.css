@@ -156,14 +156,14 @@ blockquote + blockquote.attribution {
   margin-top: -1em;
 }
 /* This is mostly copied from undum. */
-#mid_panel {
+.mid_panel {
   margin: 0 16rem;
 }
-#page {
+page {
   margin: 0 auto;
   position: relative;
 }
-#tools_wrapper {
+tools_wrapper {
   position: absolute;
   width: 100%;
   max-width: 69em;
@@ -172,7 +172,6 @@ blockquote + blockquote.attribution {
   margin: 0 auto;
 }
 .tools {
-  clear: both;
   padding: 0.6em;
   width: 14rem;
   color: #431;
@@ -181,12 +180,10 @@ blockquote + blockquote.attribution {
 }
 .tools.left {
   float: left;
-  clear: left;
   left: 0.4em;
 }
 .tools.right {
   float: right;
-  clear: right;
   right: 0.4em;
 }
 #qualities {
