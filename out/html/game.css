@@ -172,6 +172,7 @@ blockquote + blockquote.attribution {
   margin: 0 auto;
 }
 .tools {
+  clear: both;
   padding: 0.6em;
   width: 14rem;
   color: #431;
@@ -180,9 +181,13 @@ blockquote + blockquote.attribution {
 }
 .tools.left {
   float: left;
+  clear: left;
+  left: 0.4em;
 }
 .tools.right {
   float: right;
+  clear: right;
+  right: 0.4em;
 }
 #qualities {
   text-indent: 0;
