@@ -1,0 +1,63 @@
+title: Status
+new-page: true
+is-special: true
+on-arrival: {!
+if (Q.unemployed) {
+    Q.unemployed_2 = Q.unemployed.toFixed(1);
+}
+if (Q.inflation) {
+    Q.inflation_2 = Q.inflation.toFixed(1);
+}
+Q.economic_growth_2 = '0';
+if (Q.economic_growth) {
+    Q.economic_growth_2 = Q.economic_growth.toFixed(1);
+}
+!}
+
+@main
+
+= You
+
+[? if not goldwater_in_charge and not goldwater_event: <div style="text-align: center"><img src="img/portraits/MillerWilliam.jpg" width=150px><br/><b>William Edward Miller</b><br/>Vice President<br/><b><span style="color: #FF0000;">Republican</span></b>─New York</div> ?]
+
+[? if goldwater_event: <div style="text-align: center"><img src="img/portraits/GoldwaterBarry.jpg" width=150px><br/><b>Barry Goldwater</b><br/>President<br/><b><span style="color: #FF0000;">Republican</span></b>─Arizona</div> ?]
+
+[? if goldwater_in_charge: <div style="text-align: center"><img src="img/portraits/GeneralGoldwater.jpg" width=150px><br/><b>Maj Gen Barry Goldwater</b><br/>President<br/><b><span style="color: #FF0000;">Republican</span></b>─Arizona</div> ?]
+
+= Status
+
+[+ month : month +] [+ year +]
+
+Resources available: [+ resources +]
+
+Leverage available: [+ miller_leverage +] (max.: 15)
+
+Goldwater [+ goldwater_trust : goldwater_trust +] you.
+
+= Government
+
+President: [+ president +] (<b>[+ president_party +]</b>─[+ president_state +])
+
+House of Representatives composition:
+
+<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_house +] seats
+<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_house +] seats
+<b><span style="color: #999;">Others</span></b>: [+ oth_house +] seats
+
+Senate composition:
+
+<b><span style="color: #FF0000;">Republican Party</span></b>: [+ gop_sen +] seats 
+<b><span style="color: #0001ff;">Democratic Party</span></b>: [+ dem_sen +] seats
+<b><span style="color: #999;">Others</span></b>: [+ oth_sen +] seats
+
+Budget: [+ budget +]
+
+Next election: [? if (year = 1966 and month < 11) or year < 1966: Midterms ─ November 1966 ?][? if (year = 1966 and month = 12) or year > 1966: General ─ November 1968 ?]
+
+= Economics
+
+Inflation: [+ inflation_2 +]%
+
+Unemployment: [+ unemployed_2 +]%
+
+Economic growth: [+ economic_growth_2 +]%
