@@ -14,6 +14,8 @@ if (Q.economic_growth) {
 }
 !}
 
+@main
+
 = You
 
 [? if not goldwater_in_charge and not goldwater_event: <div style="text-align: center"><img src="img/portraits/MillerWilliam.jpg" width=150px><br/><b>William Edward Miller</b><br/>Vice President<br/><b><span style="color: #FF0000;">Republican</span></b>─New York</div> ?]
